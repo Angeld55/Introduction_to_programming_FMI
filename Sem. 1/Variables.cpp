@@ -8,9 +8,14 @@ int main()
 	int a, b, c, d, e, f;
 	a = b = c = d = e = f = 5;
 
+	//Types
+	int t1 = 4;
+	double t2 = 4.5;
+	char t3 = 'v';
+	bool t4 = true;
+	
 	
 	//Operators
-	
 	
 	//Arithmetic operators
 	int num1 = 5;
@@ -18,7 +23,7 @@ int main()
 
 	int result = a + b; //7
 	result = a - b;     //3
-	result = a*b;       //10
+	result = a * b;       //10
 	result = a / b;     // 2 (not 2.5) (both are ints)
 	result = a%b;       //1  5:2 = 2 (rem :1)
 
