@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int a = 13;     // 000...01101
-	int b = 20;	    // 000...10100
+	int b = 20;	// 000...10100
 
 	int r1 = a & b; // 000...00100(4)
 	int r2 = a | b; // 000...11101(29)
