@@ -104,6 +104,5 @@ bool areAllDigitsTheSame(unsigned int n)
 }
 int main()
 {
-	
 	cout << areAllDigitsTheSame(777);
 }
