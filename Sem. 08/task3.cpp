@@ -20,7 +20,7 @@ void print(int arr[SIZE])
 	cout << endl;
 }
 
-int LongestPalindromicSubarray(int arr[SIZE], int n)
+int longestPalindromicSubarray(int arr[SIZE], int n)
 {
 	int currentSize = n;
 
@@ -44,6 +44,6 @@ int main()
 {	
 
 	int arr[SIZE] = {1,4,3,2,3};
-	cout << LongestPalindromicSubarray(arr, 5);
+	cout << longestPalindromicSubarray(arr, 5);
 
 }
