@@ -2,7 +2,7 @@
 using namespace std;
 
 const int SIZE = 30;
-int CountOccurrences(int arr[SIZE], int n, int el)
+int countOccurrences(int arr[SIZE], int n, int el)
 {
 	int count = 0;
 	for (int i = 0; i < n; i++)
@@ -13,18 +13,18 @@ int CountOccurrences(int arr[SIZE], int n, int el)
 	return count;
 }
 
-int GetLonlyNumber(int arr[SIZE], int n)
+int getLonlyNumber(int arr[SIZE], int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		if (CountOccurrences(arr, n, arr[i]) == 1)
+		if (countOccurrences(arr, n, arr[i]) == 1)
 			return arr[i];
 	}
 	return -1;
 
 }
 
-int GetLonlyNumberBetter(int arr[SIZE], int n)
+int getLonlyNumberBetter(int arr[SIZE], int n)
 {
 	int res = 0;
 	for (int i = 0; i < n; i++)
@@ -39,5 +39,5 @@ int main()
 	cin >> n;
 	for (int i = 0; i < n; i++)
 		cin >> arr[i];
-	cout << GetLonlyNumberBetter(arr, n);
+	cout << getLonlyNumberBetter(arr, n);
 }
