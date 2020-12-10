@@ -3,7 +3,7 @@ using namespace std;
 
 const int SIZE = 32;
 
-int Convert(bool arr[SIZE])
+int convert(bool arr[SIZE])
 {
 	int result = 0;
 	for (int i = 31; i >= 0; i--)
@@ -13,5 +13,5 @@ int Convert(bool arr[SIZE])
 int main()
 {
 	bool arr[SIZE] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1 };
-	cout << Convert(arr);
+	cout << convert(arr);
 }
