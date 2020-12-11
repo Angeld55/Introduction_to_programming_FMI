@@ -30,5 +30,5 @@
 ## Как се осъществява достъпа:
 	
    ```c++
-    m1[i][j] = 44; адресът на m1 + i* sizeof(int)*rows_count + j* sizeof(int) 
+    m1[i][j] = 44;// адресът на m1 + i* sizeof(int)*rows_count + j* sizeof(int) 
 ```
