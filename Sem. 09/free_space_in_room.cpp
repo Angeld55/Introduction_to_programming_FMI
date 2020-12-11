@@ -65,8 +65,8 @@ bool hasSpace(bool room[ROOM_SIZE_X][ROOM_SIZE_Y], int objXDim, int objYDim)
 int main()
 {
 	bool room[ROOM_SIZE_X][ROOM_SIZE_Y] = { { 1, 1, 1, 1, 1, 1, 1, 1 },
-										                      { 1, 1, 0, 0, 0, 0, 0, 1 }, 
-										                      { 1, 1, 0, 0, 0, 0, 0, 1 }, 
-										                    	{ 1, 1, 1, 1, 1, 1, 1, 1 } };
+					        { 1, 1, 0, 0, 0, 0, 0, 1 }, 
+					        { 1, 1, 0, 0, 0, 0, 0, 1 }, 
+						{ 1, 1, 1, 1, 1, 1, 1, 1 } };
 	hasSpace(room, 2, 4); //Има ли къде да разположим мебел с размер 2x4
 }
