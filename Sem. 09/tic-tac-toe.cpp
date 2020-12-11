@@ -118,7 +118,7 @@ int main()
 		int currentSymbol = isFirstPlayersTurn ? 1 : -1;
 		table[x - 1][y - 1] = currentSymbol;
 
-		system("CLS");
+		system("CLS"); //Изчиства всичко от конзолата. Работи само на Visual Studio.
 		print(table);
 		if (isWinner(table,currentSymbol))
 		{
