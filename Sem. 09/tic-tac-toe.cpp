@@ -38,7 +38,7 @@ bool isWinner(int table[TABLE_SIZE][TABLE_SIZE], int el)
 {
 	for (int i = 0; i < TABLE_SIZE; i++)
 	{
-    //Проверка за редовете
+		 //Проверка за редовете
 		bool isWinner = true;
 		for (int j = 0; j < TABLE_SIZE; j++)
 		{
@@ -47,9 +47,9 @@ bool isWinner(int table[TABLE_SIZE][TABLE_SIZE], int el)
 		}
 		if (isWinner)
 			return true;
-   
-    //Проверка за колоните
-    isWinner = true;
+
+		//Проверка за колоните
+		isWinner = true;
 		for (int j = 0; j < TABLE_SIZE; j++)
 		{
 			if (table[i][j] != el)
@@ -59,7 +59,7 @@ bool isWinner(int table[TABLE_SIZE][TABLE_SIZE], int el)
 			return true;
 	}
   
-  //Проверка за главния диагонал
+ 	 //Проверка за главния диагонал
 	bool isWinner = true;
 	for (int i = 0; i < TABLE_SIZE; i++)
 	{
@@ -69,8 +69,8 @@ bool isWinner(int table[TABLE_SIZE][TABLE_SIZE], int el)
 	if (isWinner)
 		return true;
 
-  //Проверка за второстепенния диагонал
-  isWinner = true;
+  	//Проверка за второстепенния диагонал
+  	isWinner = true;
 	for (int i = 0; i < TABLE_SIZE; i++)
 	{
 		if (table[i][TABLE_SIZE - 1 - i] != el)
@@ -106,14 +106,14 @@ int main()
 	print(table);
 	while (true)
 	{
-    cout << "It's player " <<  (isFirstPlayersTurn ? 1 : 2) << "\'s turn!"<<endl;
+   		 cout << "It's player " <<  (isFirstPlayersTurn ? 1 : 2) << "\'s turn!"<<endl;
 		int x, y;
 		do
 		{
 			cin >> x >> y;
 		} while (!areValidCoordinates(x, y) || !isCellFree(table, x-1,y-1));
-    // Първо проверяваме дали x и y са валидни индекси и САМО АКО СА, проверяваме дали клетката е свободна. 
-    // Възползваме се, че при A || B, ако A е истина, не проверява стойността на B.
+    		// Първо проверяваме дали x и y са валидни индекси и САМО АКО СА, проверяваме дали клетката е свободна. 
+    		// Възползваме се, че при A || B, ако A е истина, не проверява стойността на B.
     
 		int currentSymbol = isFirstPlayersTurn ? 1 : -1;
 		table[x - 1][y - 1] = currentSymbol;
