@@ -7,9 +7,9 @@ using namespace std;
 // k за текста и една клетка за \0;
 
 
-const int LEN = 300;
+
 // Функцията ще променя ли масива?
-// Ако не - const!!!
+// Ако не, винаги слагаме const!
 
 int stringLength(const char* str)
 {
@@ -77,10 +77,11 @@ void stringConcat(char* dest, const char* source)
 	int destLength = stringLength(dest);
 	int sourceLength = stringLength(source);
 
-	for (int i = 0; i <= sourceLength; i++)
+	for (int i = 0; i <= sourceLength; i++) // Тук използваме <= за да вземем и терминиращата нула от source.
 		dest[destLength + i] = source[i];
 }
 
+const int LEN = 300;
 int main()
 {
 
