@@ -38,7 +38,7 @@ int binarySearch(const int* arr, int len, int searched)
 			return midIndex;
 		if (arr[midIndex] > searched)
 			rightIndex = midIndex - 1;
-		else                           //<
+		else                           
 			leftIndex = midIndex + 1;
 	}
 	return -1;
