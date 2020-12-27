@@ -20,8 +20,10 @@
 Новият стринг да е с точна дължина.
 
 **Пример:**
-A = hello friends! You are my best friend. I have no other friends!
-X = friend
-Y = enemy
+A = "hello friends! You are my best friend. I have no other friends!"
 
-**Резултат:** hello enemys! You are my best enemy. I have no other enemys
+X = "friend"
+
+Y = "enemy"
+
+**Резултат:** "hello enemys! You are my best enemy. I have no other enemys!"
