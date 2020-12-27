@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 bool isSymbol(char ch)
 {
 	return  ('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z');
