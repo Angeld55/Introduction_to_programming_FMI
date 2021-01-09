@@ -4,7 +4,7 @@ using namespace std;
 
 const int MAX_LEN = 1024;
 
-
+//returns -1 if searched is not found in str. returns the index otherwise.
 int contains(const char* str, const char* searched) 
 {
 	int len1 = strlen(str);
