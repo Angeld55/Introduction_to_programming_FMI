@@ -13,4 +13,4 @@
 
 **Задача 7:** Дадено е изречение. Да се реализира функция, която обръща реда на думите в изречението.
  
- Пример: **Вход**: "How are you   friends. I am fine!", **Изход**: "am I friends. you are How"
+ Пример: **Вход**: "How are you   friends. I am fine!", **Изход**: "fine! am I friends. you are How"                                                                                                                                                   
