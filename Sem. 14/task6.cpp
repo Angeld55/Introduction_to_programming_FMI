@@ -20,14 +20,14 @@ bool canBeCovered(int n, int m)
 
 	
 	
-	//if the plate 2x1 stands in the top left corner
+	//if the plate 1x2 stands in the top left corner
 	bool case1 = (m >=2 && canBeCovered(n - 1, 2) && canBeCovered(n, m - 2)) //try cut vertically 
 			 ||  (n>=1 && canBeCovered(n-1, m) && canBeCovered(1, m-2)); //try cut horizontaly
 		
 	if (case1)
 		return true;
 
-	//if the plate 1x3 stands in the top left corner
+	//if the plate 3x1 stands in the top left corner
 	bool case2 = (m >= 1 && canBeCovered(n - 3, 1) && canBeCovered(n, m - 1)) //try cut vertically 
 		|| (n>=3 && canBeCovered(3, m - 1) && canBeCovered(n - 3, m)); //try cut horizontaly
 
