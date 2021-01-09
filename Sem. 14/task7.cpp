@@ -29,7 +29,8 @@ int fillWords(const char* str, char words[MAXLEN][MAXLEN])
             currentWordCursorInMatrix++;
         }
     }
-    
+    if(str[len-1] != ' ')
+        count++; //the last word;
     return count;
     
 }
