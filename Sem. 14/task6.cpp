@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
-
 bool canBeCovered(int n, int m)
 {
 	if ((n == 0 && m >= 0) || (n>=0 && m==0)) //empty rectangle can be covered
@@ -36,7 +33,5 @@ bool canBeCovered(int n, int m)
 int main()
 {
 	int n, m;
-
-
 	cout << canBeCovered(4, 3);
 }
