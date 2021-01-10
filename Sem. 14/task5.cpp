@@ -66,7 +66,7 @@ bool hasSameWords(const char* sentence1, const char* sentence2)
 		{
 			s1 += 1;
 			len1--;
-			i = -1;
+			i = -1; // so it could become 0 for the next iteration
 			continue;
 		}
 
@@ -90,7 +90,7 @@ bool hasSameWords(const char* sentence1, const char* sentence2)
 		s1 += i;
 		len1 -= i;
 
-		i = -1;
+		i = -1; // so it could become 0 for the next iteration
 		delete[] currentWord;
 	}
 
