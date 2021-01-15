@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <queue>
 using namespace std;
 
 //Зад1. Даден е символен низ (стринг). Сортираме думите лексикографски.
