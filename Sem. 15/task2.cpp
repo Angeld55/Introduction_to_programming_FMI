@@ -1,4 +1,5 @@
-const int MAX_LEN = 100;
+#include <iostream>
+using namespace std;
 
 int countWords(const char* text)
 {
