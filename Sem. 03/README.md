@@ -37,9 +37,10 @@ while (<Булево условие>)
 
 ### Цикъл do- while
 ```c++
-**do**  
+do
 {  
-<Тяло на цикъла>
+	<Тяло на цикъла>
+	
 }while (<Булево условие>);
  ```
  Изпълнението работи така:
@@ -54,13 +55,13 @@ while (<Булево условие>)
 
 ### От for към while.
 ```c++
-// for-loop   
+// for loop   
 for(int i = 0; i < 10; i++)  
 {  
 <Тяло>
 }  
   
-// For loop converted to while loop   
+// for loop converted to while loop   
 int i = 0; //Инициализация
 while(i < 10)  
 {  
@@ -91,13 +92,15 @@ for(; *str != '\0'; ++str)
 // do-while loop
 do 
 {  
-<Тяло>
+	<Тяло>
+	
 } while (<Условие>);
+
 
 // do-while loop converted to while loop  
 <Тяло> 
 while(<Условие>)  
 {  
-<Тяло>
+	<Тяло>
 }
  ```
