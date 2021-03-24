@@ -14,14 +14,14 @@ int main()
 		if (n%i == 0)
 			divCount++;
 	}
-	cout << divCount;
+
 	if (divCount == 2)
 	{
-		cout << "Prime";
+		cout << "Prime" << endl;
 	}
 	else
 	{
-		cout << "Not a prime";
+		cout << "Not a prime" << endl;
 	}
 
 	
