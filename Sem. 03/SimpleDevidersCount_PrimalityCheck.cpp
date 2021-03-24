@@ -14,7 +14,8 @@ int main()
 		if (n%i == 0)
 			divCount++;
 	}
-
+	//Can we reduce the number of steps?
+	
 	if (divCount == 2)
 	{
 		cout << "Prime" << endl;
