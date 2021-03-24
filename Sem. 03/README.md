@@ -96,7 +96,7 @@ do
 
 // do-while loop converted to while loop  
 <Тяло> 
-**while**(<Условие>)  
+while(<Условие>)  
 {  
 <Тяло>
 }
