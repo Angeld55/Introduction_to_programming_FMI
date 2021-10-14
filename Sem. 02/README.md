@@ -18,6 +18,7 @@
 <h3 id="">if - else if -else</h3>
 
 ```c++
+
 	if(<condition1>)
 	{
 		//изпълнява се, ако <condition1> е истина. 
@@ -40,7 +41,9 @@
 ```
 
 <h3 id="">switch</h3>
+
 ```c++
+
 switch(<целочислена променлива>)
 {
 	case value1: code.. break;
