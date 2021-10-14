@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
+Задача: Въвежда се число между 1 и 10. Отпечатайте дали е просто.
+
 int main()
 {
 	int number;
 	cin >> number;
-
-	if (number <= 0 || number > 10)
+	
+	if (number < 1 || number > 10)
 	{
 		cout << "Invalid input!" << endl;
 	}
