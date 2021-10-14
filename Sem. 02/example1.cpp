@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//Задача: Въвежда се цяло число - оценка от училище. Отпечатайте я с дума.
+
 int main()
 {
 	int grade;
