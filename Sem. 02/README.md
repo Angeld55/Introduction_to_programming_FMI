@@ -40,7 +40,7 @@
 	}
 ```
 
-<h3 id="">switch</h3>
+<h3 id="">Switch statement</h3>
 
 ```c++
 
