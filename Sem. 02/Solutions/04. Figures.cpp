@@ -25,4 +25,15 @@ int main()
 		cin >> R;
 		cout << PI * R * R << endl;
 	}
+	else if (figure == 't')
+	{
+		double width;
+		double height;
+		cin >> width >> height;
+		cout << width * height / 2 << endl;
+	}
+	else
+	{
+		cout << "Invalid figure!" << endl;
+	}
 }
