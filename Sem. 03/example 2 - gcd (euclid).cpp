@@ -8,7 +8,7 @@ int main()
 
 	if (n < k) //swap
 	{
-		int temp = k;
+		int temp = n;
 		n = k;
 		k = temp;
 	}
