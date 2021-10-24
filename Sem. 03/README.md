@@ -112,8 +112,8 @@ do
 *Вход:  
 4  
 Изход:  
-&nbsp; 1 &nbsp;&nbsp; 2 &nbsp;&nbsp; 3 &nbsp;&nbsp; 4  
-&nbsp; 8 &nbsp;&nbsp; 7 &nbsp;&nbsp; 6 &nbsp;&nbsp; 5  
+1 &nbsp;&nbsp; 2 &nbsp;&nbsp; 3 &nbsp;&nbsp; 4  
+8 &nbsp;&nbsp; 7 &nbsp;&nbsp; 6 &nbsp;&nbsp; 5  
 9 &nbsp; 10 &nbsp; 11 &nbsp; 12  
 16 &nbsp; 15 &nbsp; 14 &nbsp; 13*   
 
