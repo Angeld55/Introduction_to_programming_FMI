@@ -19,4 +19,3 @@ int main()
 	}
 	cout << isPrime << endl;
 }
-}
