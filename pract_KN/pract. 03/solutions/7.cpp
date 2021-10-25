@@ -1,6 +1,4 @@
 #include<iostream>
-#include<thread>
-#include<chrono>
 
 int main() {
 	int number = 0;
