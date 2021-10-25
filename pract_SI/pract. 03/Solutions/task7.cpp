@@ -13,12 +13,12 @@ int main()
 	unsigned long long N;
 	cin >> N;
 
-	if (N <= LIMIT)
+	if (N < LIMIT)
 		return -1;
 
 	for (int c = 1; c <= N; c++) {
-		for (int b = 1; b <= c; b++) {
-			for (int a = 1; a <= b; a++) {
+		for (int b = 1; b < c; b++) {
+			for (int a = 1; a < b; a++) {
 				if ((a * a) + (b * b) == (c * c)) {
 					cout << a << SEPARATOR << b << SEPARATOR << c << endl;
 				}
