@@ -17,7 +17,7 @@ int main()
 			break;
 		}
 	}
-	cout << isPrime << endl;;
+	cout << isPrime << endl;
 }
 	
 
