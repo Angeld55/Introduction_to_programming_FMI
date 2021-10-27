@@ -128,11 +128,10 @@ do
 *Вход:  
 4  
 Изход:  
-
 1 &nbsp; 8 &nbsp; 9 &nbsp; 16  
 2 &nbsp; 7 &nbsp; 10 &nbsp; 15  
 3 &nbsp; 6 &nbsp; 11 &nbsp; 14  
-4 &nbsp; 5 &nbsp; 12 &nbsp; 13 *
+4 &nbsp; 5 &nbsp; 12 &nbsp; 13* 
 
 **Задача 8:** Въвеждат се 5 цели числа - a,b,c,d, e. 
 Разглеждаме полинома f(x) = a * x^4 + b * x^3 + c* x^2 + d * x + e.
