@@ -11,7 +11,7 @@ int main()
     
     for(int i = 1; i <= n; i++) 
     {
-        for(int k = n - i; k >= 0; k--) 
+        for(int k = n - i - 1; k >= 0; k--) 
             cout << " "; // print the spaces
         
         for(int j = i; j >= 1; j--) 
@@ -23,7 +23,7 @@ int main()
     
     for(int i = n - 1; i >= 1; i--) 
     {
-        for(int k = n - i; k >= 0; k--) 
+        for(int k = n - i - 1; k >= 0; k--) 
             cout << " ";
         
         for(int j = i; j >= 1; j--) 
