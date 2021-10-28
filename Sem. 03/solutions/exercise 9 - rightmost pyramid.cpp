@@ -19,7 +19,7 @@ int main()
         
         cout << endl;
     }
-    // print the first part of the pyramid (the one going from (n-1)...21 to 1
+    // print the second part of the pyramid (the one going from (n-1)...21 to 1
     
     for(int i = n - 1; i >= 1; i--) 
     {
