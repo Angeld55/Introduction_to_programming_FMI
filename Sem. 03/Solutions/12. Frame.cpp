@@ -11,10 +11,10 @@ int main()
 	{
 		bool onFirstOrLastLine = (row == 0 || row == n-1);
 
-		cout << ((onFirstOrLastLine) ? "+" : "|");
+		cout << ((onFirstOrLastLine) ? "+ " : "| ");
 
 		for (int col = 0; col < n - 2; col++)
-			cout << "-";
+			cout << "- ";
 
 		cout << ((onFirstOrLastLine) ? "+" : "|") << endl;
 	}
