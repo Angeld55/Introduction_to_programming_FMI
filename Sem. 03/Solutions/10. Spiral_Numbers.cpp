@@ -7,17 +7,17 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = 0; i < n; i++)
+	for (int row = 0; row < n; row++)
 	{
-		int previous = i + 1;
-		for (int j = 0; j < n; j++)
+		int previous = row + 1;
+		for (int col = 0; col < n; col++)
 		{
-			if (j == 0)
+			if (col == 0)
 				cout << previous << " ";
-			else if (j % 2 == 1)
-				cout << (previous += (n-i-1) * 2 + 1) << " ";
+			else if (col % 2 == 0)
+				cout << (previous += row*2 + 1) << " ";
 			else
-				cout << (previous += i*2 + 1) << " ";
+				cout << (previous += (n-row-1) * 2 + 1) << " ";
 		}
 		cout << endl;
 	}
