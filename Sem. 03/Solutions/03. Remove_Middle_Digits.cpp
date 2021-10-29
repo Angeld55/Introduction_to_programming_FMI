@@ -7,12 +7,13 @@ int main()
 	int n;
 	cin >> n;
 
-	int digits = 0, reversedN;
+	int digits = 0;
 	for (int i = n; i != 0; i /= 10)
 		digits++;
 
-	int tenToTheHalf = 1; // ten to the power of digits to take from each end
 	int digitsToTakeFromEachEnd = digits / 2 + (digits % 2 - 1);
+	int tenToTheHalf = 1; // ten to the power of digits to take from each end
+
 	for (int i = 0; i < digitsToTakeFromEachEnd; i++)
 		tenToTheHalf *= 10;
 
