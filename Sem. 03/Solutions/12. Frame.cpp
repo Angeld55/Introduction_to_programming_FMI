@@ -9,11 +9,13 @@ int main()
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << ((i == 0 || i == n-1) ? "+" : "|");
-		for(int j = 0; j < n - 2; j++)
+		bool onFirstOrLastLine = (i == 0 || i == n-1);
+
+		cout << ((onFirstOrLastLine) ? "+" : "|");
 
 		for (int j = 0; j < n - 2; j++)
 			cout << "-";
-		cout << ((i == 0 || i == n-1) ? "+" : "|") << endl;
+
+		cout << ((onFirstOrLastLine) ? "+" : "|") << endl;
 	}
 }
