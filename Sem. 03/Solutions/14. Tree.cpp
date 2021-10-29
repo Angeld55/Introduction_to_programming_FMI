@@ -12,9 +12,8 @@ int main()
 		for(int j = n - i; j > 0; j--)
 			cout << " ";
 		for(int j = -i + 1; j < i; j++)
-		{
 			cout << i - ((j < 0) ? -j : j);
-		}
+
 		cout << endl;
 	}
 	for(int i = n - 1; i > 0; i--)
