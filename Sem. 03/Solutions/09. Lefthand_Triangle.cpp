@@ -7,16 +7,18 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = -n + 1; i < n; i++)
+	for (int row = -n + 1; row < n; row++)
 	{
-		int absI = ((i > 0) ? i : -i), number = 0;
+		int absRow = ((row > 0) ? row : -row);
 
-		for (int j = n - absI; j > 0; j--)
-			(number *= 10) += j;
-
-		for (int j = absI; j > 0; j--)
+		for (int col = absRow; col > 0; col--)
 			cout << " ";
 
-		cout << number << endl;
+		int numberOnLine = 0;
+
+		for (int col = n - absRow; col > 0; col--)
+			(numberOnLine *= 10) += col;
+
+		cout << numberOnLine << endl;
 	}
 }

@@ -7,13 +7,13 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = 0; i < n; i++)
+	for (int row = 0; row < n; row++)
 	{
-		bool onFirstOrLastLine = (i == 0 || i == n-1);
+		bool onFirstOrLastLine = (row == 0 || row == n-1);
 
 		cout << ((onFirstOrLastLine) ? "+" : "|");
 
-		for (int j = 0; j < n - 2; j++)
+		for (int col = 0; col < n - 2; col++)
 			cout << "-";
 
 		cout << ((onFirstOrLastLine) ? "+" : "|") << endl;

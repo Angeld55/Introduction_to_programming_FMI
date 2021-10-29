@@ -7,20 +7,24 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = 0, previous = 0; i < n; i++)
+	for (int row = 0, previous = 0; row < n; row++)
 	{
 		int modifier = 1;
-		if (i % 2 == 1)
+
+		// When going from right to left, make previous be the number at the end of the line + 1, and then decrement
+		if (row % 2 == 1)
 		{
 			previous += n + 1;
 			modifier = -1;
 		}
-			
-		for (int j = 0; j < n; j++)
+
+		for (int col = 0; col < n; col++)
 			cout << (previous += modifier) << " ";
 
 		cout << endl;
-		if (i % 2 == 1)
+
+		// Account for decrementing when gong from right to left
+		if (row % 2 == 1)
 			previous += n - 1;
 	}
 }

@@ -15,9 +15,9 @@ int main()
 			if (col == 0)
 				cout << previous << " ";
 			else if (col % 2 == 0)
-				cout << (previous += row*2 + 1) << " ";
+				cout << (previous += row * 2 + 1) << " ";
 			else
-				cout << (previous += (n-row-1) * 2 + 1) << " ";
+				cout << (previous += (n -row -1) * 2 + 1) << " ";
 		}
 		cout << endl;
 	}

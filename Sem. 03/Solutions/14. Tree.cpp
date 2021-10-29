@@ -7,21 +7,24 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = 1; i <= n; i++)
+	// Tree crown
+	for (int row = 1; row <= n; row++)
 	{
-		for (int j = n - i; j > 0; j--)
+		for (int col = n - row; col > 0; col--)
 			cout << " ";
 
-		for (int j = -i + 1; j < i; j++)
-			cout << i - ((j < 0) ? -j : j);
+		for (int col = -row + 1; col < row; col++)
+			cout << row - ((col < 0) ? -col : col);
 
 		cout << endl;
 	}
-	for (int i = n - 1; i > 0; i--)
+
+	// Tree trunk
+	for (int row = n - 1; row > 0; row--)
 	{
-		for (int j = n - 1; j > 0; j--)
+		for (int col = n - 1; col > 0; col--)
 			cout << " ";
 
-		cout << i << endl;
+		cout << row << endl;
 	}
 }

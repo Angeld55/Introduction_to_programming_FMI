@@ -7,9 +7,9 @@ int main()
 	int n;
 	cin >> n;
 
-	for (int i = 1; i <= n; i++)
+	for (int row = 1; row <= n; row++)
 	{
-		for (int j = 0; j < i; j++)
+		for (int col = 0; col < row; col++)
 			cout << "$ ";
 
 		cout << endl;
