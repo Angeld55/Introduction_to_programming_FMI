@@ -2,26 +2,6 @@
 
 int main()
 {
-	// Input: 123  
-	//				countDigits = 3
-	//				digitsAtEachEnd = (3 / 2) + (3 % 2 - 1) = 1 + (1 - 1) = 1
-	//				digitsToRemove = 1
-	//				temp1 = 10 * 10 = 100
-	//				temp2 = 10 = 10
-	//				result = (123 / 100) * 10 + 123 % 10 =
-	//					   = 1*10 + 3 = 13
-	// Output: 13, 14
-
-	// Input: 123456
-	//				countDigits = 6
-	//				digitsAtEachEnd = (6 / 2) + (6 % 2 - 1) = 3 + (0 - 1) = 2
-	//				digitsToRemove = 2
-	//				temp1 = 10*10*10*10 = 10000
-	//				temp2 = 10 * 10 = 100
-	//				result = (123456 / 10000) * 100 + 123456 % 100 =
-	//					   = 12*100 + 56 = 1200 + 54 = 1256
-	// Output: 1256, 1257
-
 	int number;
 	std::cout << "Enter a number: ";
 	std::cin >> number;
@@ -36,30 +16,30 @@ int main()
 	}
 
 	// how many digits we will have at each end
-	int digitsAtEachEnd = (countDigits / 2) + (countDigits % 2 - 1);
+	int digitsAtEachEnd = (countDigits / 2) + (countDigits % 2 - 1);   // if we have 123456 -> digitsAtEachEnd = (6 / 2) + (6 % 2 - 1) = 3 + (0 - 1) = 2
 
 	// how many digits we will remove
-	// even number -> 2, odd number -> 1
-	int digitsToRemove = (countDigits % 2 == 0) ? 2 : 1;
+	int digitsToRemove = (countDigits % 2 == 0) ? 2 : 1;     // even number -> 2, odd number -> 1
 
 	// zero value for product
-	int temp1 = 1;
+	int toTakeTheFirstDigits = 1;
 	while ((countDigits - digitsAtEachEnd) != 0)
 	{
-		temp1 *= 10;
+		toTakeTheFirstDigits *= 10;
 		countDigits--;
 	}
 
-	int temp2 = 1;
+	int toTakeTheLastDigits = 1;
 	while (digitsAtEachEnd != 0)
 	{
-		temp2 *= 10;
+		toTakeTheLastDigits *= 10;
 		digitsAtEachEnd--;
 	}
 
-	int result = (number / temp1) * temp2 + number % temp2;
-	std::cout << result << std::endl;
-	std::cout << ++result << std::endl;
+	int result = (number / toTakeTheFirstDigits) * toTakeTheLastDigits + number % toTakeTheLastDigits;   // result = (123456 / 10000) * 100 + 123456 % 100 =
+																										 //        = 12*100 + 56 = 1200 + 54 = 1256
+	std::cout << result << std::endl;     // 1256
+	std::cout << ++result << std::endl;   // 1257
 
 	return 0;
 }

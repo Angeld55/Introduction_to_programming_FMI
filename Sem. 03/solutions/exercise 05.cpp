@@ -2,25 +2,22 @@
 
 int main()
 {
-	int number;
+	unsigned number;
 	std::cout << "Enter a number: ";
 	std::cin >> number;
-
-	if (number <= 0)
+	
+	while (number % 2 == 0)
 	{
-		std::cout << "The number isn't a power of two!" << std::endl;
+		number /= 2;
 	}
 
-	//    100        1000
-	// &  011	  &  0111
-	//    000		 0000
-	if ((number & (number - 1)) == 0)
+	if (number == 1)
 	{
-		std::cout << "The number is a power of two!" << std::endl;
+		std::cout << "The number is power of 2!" << std::endl;
 	}
 	else
 	{
-		std::cout << "The number isn't a power of two!" << std::endl;
+		std::cout << "The number is not power of 2!" << std::endl;
 	}
 
 	return 0;

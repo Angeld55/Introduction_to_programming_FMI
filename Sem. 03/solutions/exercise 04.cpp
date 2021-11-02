@@ -18,11 +18,10 @@ int main()
 				isPrime = false;
 				break;
 			}
-			else
-			{
-				std::cout << i << " ";
-				break;
-			}
+		}
+		if (isPrime)
+		{
+			std::cout << i << " ";
 		}
 	}
 
