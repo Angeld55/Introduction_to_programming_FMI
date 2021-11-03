@@ -161,6 +161,6 @@ do
 
 
 **Задача 15:** Да се напише програма, която приема цяло положително число n и отпечатва следната папионка:
-![enter image description here](https://i.ibb.co/FhvpYHP/pap.png)
+![enter image description here](https://i.ibb.co/NKSPm4z/ddz.png)
 
 
