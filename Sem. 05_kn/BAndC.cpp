@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 using namespace std;
-// Играта - бикове и крави.
 
 
 const int DIGITS_COUNT = 3;
