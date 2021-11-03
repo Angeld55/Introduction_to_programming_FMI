@@ -14,11 +14,11 @@ int main()
 		for (int col = absRow; col > 0; col--)
 			cout << " ";
 
-		int numberOnLine = 0;
+		int lineEndNum = 0;
 
 		for (int col = n - absRow; col > 0; col--)
-			(numberOnLine *= 10) += col;
+			(lineEndNum *= 10) += col;
 
-		cout << numberOnLine << endl;
+		cout << lineEndNum << endl;
 	}
 }

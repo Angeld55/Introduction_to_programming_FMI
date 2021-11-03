@@ -11,13 +11,12 @@ int main()
 	for (int i = n; i != 0; i /= 10)
 		digits++;
 
-	int digitsToTakeFromEachEnd = digits / 2 + (digits % 2 - 1);
-	int tenToTheHalf = 1; // ten to the power of digits to take from each end
+	int tenToTheHalf = 1; // 10 to the power of digits to take from each end (calculated in the loop below)
 
-	for (int i = 0; i < digitsToTakeFromEachEnd; i++)
+	for (int endDigits = digits / 2 + (digits % 2 - 1); endDigits > 0; endDigits--)
 		tenToTheHalf *= 10;
 
-	int tenToTheMiddle = (digits % 2 == 0) ? 100 : 10; // ten to the power of digits to remove from the middle
+	int tenToTheMiddle = (digits % 2 == 0) ? 100 : 10; // 10 to the power of digits to remove from the middle
 
 	int resultNumber = (n % tenToTheHalf) + (n / tenToTheHalf / tenToTheMiddle) * tenToTheHalf;
 

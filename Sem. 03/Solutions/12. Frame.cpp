@@ -9,7 +9,7 @@ int main()
 
 	for (int row = 0; row < n; row++)
 	{
-		bool onFirstOrLastLine = (row == 0 || row == n-1);
+		bool onFirstOrLastLine = (row == 0 || row == n - 1);
 
 		cout << ((onFirstOrLastLine) ? "+ " : "| ");
 

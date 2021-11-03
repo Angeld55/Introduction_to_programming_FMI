@@ -14,7 +14,7 @@ int main()
 			cout << " ";
 
 		for (int col = -row + 1; col < row; col++)
-			cout << row - ((col < 0) ? -col : col);
+			cout << row - ((col < 0) ? -col : col); // row - abs(col)
 
 		cout << endl;
 	}

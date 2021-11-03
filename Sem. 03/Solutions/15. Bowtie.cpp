@@ -11,11 +11,13 @@ int main() {
 	{
 		int absI = (i < 0) ? -i : i, diff = n - absI;
 
-		/* Numbers on the left */
+		// Numbers on the left
+
 		for (int j = 1; j <= diff; j++)
 			cout << j << " ";
 
-		/* Spaces/Line in the middle */
+		// Spaces/Line in the middle
+
 		if (i == 0) 
 			middleSpacer = '-';
 
@@ -25,7 +27,8 @@ int main() {
 		if (i == 0)
 			middleSpacer = ' ';
 
-		/* Number on the right */
+		// Number on the right
+
 		for (int j = diff; j > 0; j--)
 			cout << " " << j;
 

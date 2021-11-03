@@ -11,7 +11,7 @@ int main()
 	{
 		int modifier = 1;
 
-		// When going from right to left, make previous be the number at the end of the line + 1, and then decrement
+		// When going from right to left, previous = number at the end of the line + 1, and make further number operations decrement
 		if (row % 2 == 1)
 		{
 			previous += n + 1;

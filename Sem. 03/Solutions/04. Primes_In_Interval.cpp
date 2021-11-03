@@ -14,6 +14,7 @@ int main()
 	{
 		bool isPrime = true;
 		int rootOfI = sqrt(i);
+
 		for (int j = 2; j <= rootOfI; j++)
 		{
 			if (i % j == 0)
