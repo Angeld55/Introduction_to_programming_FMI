@@ -1,8 +1,6 @@
-bool isPositive(const int num)
+bool isPositive(int num)
 {
     if (num <= 0)
-    {
         return false;
-    }
     return true;
 }

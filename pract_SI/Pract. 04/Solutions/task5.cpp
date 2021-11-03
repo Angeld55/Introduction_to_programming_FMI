@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void print(const int N, const char S = ' ')
+void print(int N, char S = ' ')
  {
      for (size_t i = 0; i < N; i++)
      {

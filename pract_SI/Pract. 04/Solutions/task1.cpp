@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int sum(const int a, const int b)
+int sum(int a, int b)
 {
 	/*
 	//First way
