@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-	 string card_number;;
+	 string card_number;
 
 	 cout << "Card number: ";
 	 cin >> card_number;
