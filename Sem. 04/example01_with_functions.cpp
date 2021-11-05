@@ -1,8 +1,11 @@
 #include <iostream>
 using namespace std;
 
-bool isPrime(int n)
+bool isPrime(unsigned n)
 {
+	if(n <= 1)
+		return false;
+
 	double temp = sqrt(n);
 
 	for (int i = 2; i <= temp; i++)
