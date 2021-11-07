@@ -6,7 +6,7 @@ using namespace std;
 // Taken from exercise02.cpp
 double distanceBetweenPoints(int x1, int y1, int x2, int y2)
 {
-	int sideA = abs(x1 - x2), sideB = abs(y1 - y2);
+	int sideA = x1 - x2, sideB = y1 - y2;
 	return sqrt(sideA * sideA + sideB * sideB); // Pythagorean theorem
 }
 
