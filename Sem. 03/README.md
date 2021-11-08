@@ -163,4 +163,5 @@ do
 **Задача 15:** Да се напише програма, която приема цяло положително число n и отпечатва следната папионка:
 ![enter image description here](https://i.ibb.co/NKSPm4z/ddz.png)
 
-
+**Задача 15:** Да се напише програма, която приема цяло положително число n и отпечатва следния килим:
+![enter image description here](https://i.ibb.co/c2w8Gwt/kilim.png)
