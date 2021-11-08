@@ -6,10 +6,9 @@ using namespace std;
 // Въвежда се число от потребителя. (скриваме го)
 
 // Приемаме заявки от вида :
-// x
-// 2 бика и 2 крави.
-const int DIGITS_COUNT = 5;
-
+// Вход: x
+// Изход: 2 бика и 2 крави.
+const int DIGITS_COUNT = 4;
 
 int getNumberLength(int n)
 {
