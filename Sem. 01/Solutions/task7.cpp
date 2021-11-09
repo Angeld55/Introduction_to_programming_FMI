@@ -1,36 +1,23 @@
-int main(){
-    
-    int x; cin >> x;
-    int left;
-    if (x >= 100) {
-        cout <<x / 100<<" ";
-        left = x % 100;
-    }
-    else {
-        left = x;
-    }
-    if (left >= 50) {
-        cout << left / 50<<" ";
-        left = left % 50;
-    }
-    if (left >= 20) {
-        cout <<left / 20 << " ";
-        left = left % 20;
-    }
-    if (left >= 10) {
-        cout << left/10<<" ";
-        left %= 10;
-    }
-    if (left >= 5) {
-        cout << left / 5 << " ";
-        left % 5;
-    }
-    if (left >= 2) {
-        cout << left / 2 << " ";
-        left % 2; 
-    }
-    if (left == 1) {
-        cout << 1;
-    }
-    return 0;
-}
+int main() {
+        int x; cin >> x;
+        int left;
+        int k = x / 100;
+        cout << k<<"*100" << " ";
+        left = x - (k*100);
+        k = left / 50;
+        cout << k*50 << " ";
+        left = left - (k*50);
+        k = left / 20;
+        cout << k<<"*20" << " ";
+        left = left - (k*20);
+        k = left / 10;
+        cout << k * 10 << " ";
+        left = left - (k*10);
+        k = left / 5;
+        cout << k * 5 << " ";
+        left =  left- (k*5);
+        k = left / 2;
+        cout << k <<"*2" << " ";
+        left = left - (k*2);
+        cout << (left==1) << " ";
+        return 0;
