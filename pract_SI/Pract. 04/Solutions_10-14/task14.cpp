@@ -8,7 +8,6 @@ bool isPrime(int number)
 {
 	int size = sqrt(number);
 	                         
-
 	for (int i = 2; i <= size; i++)
 	{
 		if (number % i == 0)
@@ -88,9 +87,6 @@ int main()
 		std::cout << primeOfNumber << " + " << number - primeOfNumber << std::endl;
 	else
 		std::cout << "Error!" << std::endl;
-
-  
-
-
+	
 	return 0;
 }
