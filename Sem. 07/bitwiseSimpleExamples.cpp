@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isEven(int n)
+bool isEven(unsigned n) // какво ще трябва се промени ако искаме да е signed?
 {
 	return !(n & 1);
 }
