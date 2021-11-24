@@ -27,6 +27,7 @@ int* ptr = arr;
 ```
 
 ![enter image description here](https://i.ibb.co/ZmRwt6R/Untitled-Diagram-drawio-5.png)
+
 Примерна имплементация на:
 
  - strlen (намиране на дължина на стринг)
