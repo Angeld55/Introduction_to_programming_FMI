@@ -123,8 +123,9 @@ unsigned getCharoOccurrencesCount(const char* str, char ch)
 
 int main()
 {
-	int firstDigits = 1234;
-	int secondDigits = 9876;
-
+	char str1[] = "abcd";
+	char str2[] = "bcc";
+	
+	cout << my_strcmp(str1, str2) << endl;
 }
 
