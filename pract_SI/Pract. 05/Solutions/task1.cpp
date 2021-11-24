@@ -1,4 +1,4 @@
-int firstDuplicateInArray(int *arr, int size)
+int firstDuplicateInArray(const int *arr, int size)
 {
 	for (int i = 0; i < size - 1; i++)
 	{
