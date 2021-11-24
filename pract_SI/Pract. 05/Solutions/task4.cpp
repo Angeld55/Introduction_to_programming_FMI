@@ -1,4 +1,4 @@
-bool isPalindrom(int *arr, int size)
+bool isPalindrom(const int *arr, int size)
 {
 	for (int i = 0; i < size / 2; i++)
 	{

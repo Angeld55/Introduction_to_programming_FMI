@@ -9,7 +9,7 @@ otherwise -1.
 //int m - middle index
 //int x - number 'x' we are searching for
 
-int binarySearch1(int *arr, int l, int r, int x)
+int binarySearch1(const int *arr, int l, int r, int x)
 {
     while (l <= r)
 	{
@@ -21,6 +21,5 @@ int binarySearch1(int *arr, int l, int r, int x)
         else 
 			r = m - 1; // If x is smaller, ignore right half
     }
-	
     return -1; // if we reach here, then the element was not present
 }
