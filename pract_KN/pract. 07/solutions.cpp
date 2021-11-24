@@ -38,14 +38,13 @@ void printSubset(int arr[], int length, int indexOfSet) {
 	std::cout << ']' << std::endl;
 }
 
-void generateSubSets(int arr[], int length) {
-	int mask = 0;
+void generateSubsets(int arr[], int length) {
 	int border = 1 << length;
 	for (int i = 0; i < border; i++)
 		printSubset(arr, length, i);
 }
 
-//bonus: function to change sign of a number
+//bonus: function to change the sign of a number
 void changeSign(int& n) {
   n = ~n + 1;
 }
