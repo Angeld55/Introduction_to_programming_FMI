@@ -43,7 +43,7 @@ int* ptr = arr;
 
 *Да се реши без допълнителна памет (in-place).*
 
-*Вход: "I am the best of the best", "best" , "worst" , Изход: "I am the worst of the worst*
+*Вход: "I am the best of the best", "best" , "worst" , Изход: "I am the worst of the worst"*
 
 **Задача 2** Напишете функции toUpper и toLower, които приемат стринг и променят всички главни букви в малки/всички малки букви в главни.
 
