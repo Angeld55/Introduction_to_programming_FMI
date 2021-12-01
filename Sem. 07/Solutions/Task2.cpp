@@ -5,7 +5,7 @@ using namespace std;
 int findSingle(int* arr, unsigned size)
 {
 	int temp = arr[0];
-	for (int i = 1; i < size; i++)
+	for (unsigned i = 1; i < size; i++)
 		temp = temp ^ arr[i];
 
 	return temp;
