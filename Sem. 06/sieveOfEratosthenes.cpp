@@ -26,9 +26,7 @@ void printSieve(const bool arr[], unsigned size)
 	for (unsigned i = 0; i < size; i++)
 	{
 		if (arr[i])
-		{
 			cout << i << " ";
-		}
 	}
 }
 
