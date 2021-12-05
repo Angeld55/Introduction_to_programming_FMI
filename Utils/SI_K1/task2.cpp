@@ -47,8 +47,8 @@ unsigned task2b(char* text)
 	{
 		if (isDigit(*textIter))
 		{
-            (accumulatedNumber *= 10) += convertToInt(*textIter);
-            textIter++;
+            		(accumulatedNumber *= 10) += convertToInt(*textIter);
+            		textIter++;
 		}
 		else
 		{
