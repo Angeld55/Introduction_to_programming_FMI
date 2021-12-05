@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//Sem 4, task 6
+//////// Sem 4, task 6
+
 unsigned reverse(unsigned int n)
 {
 	unsigned int result = 0;
@@ -54,7 +55,8 @@ bool isInfix(unsigned int n, unsigned int k)
 	}
 	return false;
 }
-///// end sem4 task6
+
+////// end sem4 task6
 
 //Solution
 
