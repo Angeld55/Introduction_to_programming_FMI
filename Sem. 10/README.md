@@ -82,4 +82,4 @@ void f()
   int* ptr = new int[3];
   delete[] ptr; //!!!!!!!
 }
-``` **
+```
