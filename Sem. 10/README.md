@@ -64,7 +64,7 @@ void f()
 {
   int x = 40;
   char ch[2] = {'a', 'b'};
-  int* ptr = new int[3]
+  int* ptr = new int[3];
 }
 ```
 
@@ -80,6 +80,8 @@ void f()
   int x = 40;
   char ch[2] = {'a', 'b'};
   int* ptr = new int[3];
-  <br> delete[] ptr; <\br>
+  <pre>
+  <b> delete[] ptr; <\b>
+  <\pre>
 }
 ```
