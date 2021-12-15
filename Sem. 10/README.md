@@ -2,15 +2,15 @@
 # Указатели и референции. Динамична памет
 
  - Оператор **&**
- - 
+
 Приема променлива от тип Т.
 
 Връща указател от тип T*.
  
  
 ```c++
-   int number = 10;
-   int* ptr = &number;
+  int number = 10;
+  int* ptr = &number;
 ``` 
 
 
@@ -22,8 +22,8 @@
 
 
 ```c++
-   int number = 10;
-   int* ptr = &number;
-   int result = *ptr; 
-   cout << result; //10
+  int number = 10;
+  int* ptr = &number;
+  int result = *ptr; 
+  cout << result; //10
 ```
