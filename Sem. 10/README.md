@@ -80,8 +80,9 @@ void f()
   int x = 40;
   char ch[2] = {'a', 'b'};
   int* ptr = new int[3];
-  <pre>
-  **delete[] ptr;**
-  </pre>
-}
 ```
+**
+```c++
+  delete[] ptr
+}
+``` **
