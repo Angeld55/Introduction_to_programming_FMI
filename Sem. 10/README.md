@@ -81,7 +81,7 @@ void f()
   char ch[2] = {'a', 'b'};
   int* ptr = new int[3];
   <pre>
-  <b> delete[] ptr; <\b>
-  <\pre>
+  <b> delete[] ptr; </b>
+  </pre>
 }
 ```
