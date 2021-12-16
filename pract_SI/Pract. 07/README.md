@@ -1,0 +1,2 @@
+- ### [Материали символни низове](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/pract_SI/Pract.%2007/String-Streams.pdf)
+- ### [Задачи символни низове](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/pract_SI/Pract.%2007/String_Tasks.txt)
