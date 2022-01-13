@@ -6,10 +6,17 @@ size_t factRec(size_t number) {
 	return number * factRec(number - 1);
 }
 
-size_t powerRec(size_t number, size_t power) {
+double powerRec(size_t number, int power) {
 	if (power == 0)
 		return 1;
 	return number * powerRec(number, power - 1);
+}
+
+double power(size_t number, int power) {
+	if (power < 0)
+		return 1 / powerRec(number, -power);
+
+	return powerRec(number, power);
 }
 
 size_t sumOfDigitsRec(size_t number) {
