@@ -38,7 +38,7 @@ int getMinOperationsWrapper(size_t N)
 		cache[i] = 0;
 
 	int result = getMinOperations(N, cache);
-	delete[] chache;
+	delete[] cache;
 	return result;
 }
 
