@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
 
-unsigned int log(unsigned int n, unsigned int k)
+unsigned int power(unsigned int n, unsigned int k)
 {
-	int count = 0;
+	unsigned result = 1;
+	
+	for(unsigned i = 0; i < k; i++)
+	    result*=n;
 
-	while (n >= k)
-	{
-		n /= k;
-		count++;
-	}
-
-	return count;
+	return result;
 }
 
 
 int main()
 {
-	cout << log(4, 10) << endl;
+	cout << power(5, 4) << endl;
 }
