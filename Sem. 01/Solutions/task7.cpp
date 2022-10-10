@@ -1,4 +1,3 @@
-// Example program
 #include <iostream>
 using namespace std;
 
