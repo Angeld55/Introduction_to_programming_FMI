@@ -8,23 +8,17 @@ int main()
 	int number;
 	cin >> number;
 	
-	if (number < 1 || number > 10)
+	switch (number)
 	{
-		cout << "Invalid input!" << endl;
-	}
-	else
-	{
-
-		switch (number)
-		{
 		case 2:
 		case 3:
 		case 5:
 		case 7: cout << "Prime!" << endl;
-		default: cout << "Not a prime!" << endl;
-			break;
-		}
+		case 1:
+		case 4:
+		case 6:
+		case 8:
+		case 9: cout << "Not prime" << endl;
 	}
-
-
+	
 }
