@@ -13,6 +13,7 @@ int main()
 		if (n % min == 0 && k % min == 0)
 		{
 			gcd = min;
+			break;
 		}
 		min--;
 	}
