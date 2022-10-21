@@ -12,10 +12,14 @@ int main()
     {
         int whiteSpacesCount = (n - i) / 2;
         for (int j = 0; j < whiteSpacesCount; j++)
+        {
             std::cout << ' ';
+        }
 
         for (int j = 0; j < i; j++)
+        {
             std::cout << '*';
+        }
 
         std::cout << std::endl;
     }
@@ -25,10 +29,14 @@ int main()
         int whiteSpacesCount = (n - i) / 2;
 
         for (int j = 0; j < whiteSpacesCount; j++)
+        {
             std::cout << ' ';
+        }
 
         for (int j = 0; j < i; j++)
+        {
             std::cout << '*';
+        }
 
         std::cout << std::endl;
     }
