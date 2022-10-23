@@ -6,6 +6,12 @@ int main()
 {
 	unsigned int n;
 	cin >> n;
+	
+	if(n <= 1)
+	{
+		cout << "Not prime" << endl;
+		return 0;
+	}
 
 	bool isPrime = true;
 	double sqrtFromNumberToCheck = sqrt(n);
@@ -17,5 +23,8 @@ int main()
 			break;
 		}
 	}
-	cout << isPrime << endl;
+	if(isPrime)
+		cout << "Prime";
+	else
+		cout << "Not prime";
 }
