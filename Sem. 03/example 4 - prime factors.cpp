@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -7,7 +8,7 @@ int main()
 	cin >> n;
 
 
-	for (int i = 2; i <= n; i++)
+	for (unsigned int i = n; i > 1; i--)
 	{
 		//check if i is prime
 
@@ -34,10 +35,10 @@ int main()
 
 		if (count != 0)
 			cout << i << "^" << count << " ";
+		
+		if(n == 1)
+			break;
 
 	}
-
-
-
 	return 0;
 }
