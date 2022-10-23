@@ -9,23 +9,24 @@ int main()
 	cin >> n;
 
 	int mostCommonDigit = -1;
-	int occurences = 0;
-	for (int i = 0; i <= 9; i++)
+	int mostCommonDigitOccurences = 0;
+	
+	for (int currentDigit = 0; currentDigit <= 9; currentDigit++)
 	{
 		int copyOfN = n;
-		int count = 0;
+		int currentDigitOccurences = 0;
 		while (copyOfN != 0)
 		{
 			int lastDigit = copyOfN % 10;
-			if (lastDigit == i)
-				count++;
+			if (lastDigit == currentDigit)
+				currentDigitOccurences++;
 			copyOfN /= 10; //removes the last digit;
 		}
 
-		if (count > occurences)
+		if (currentDigitOccurences > mostCommonDigitOccurences)
 		{
-			mostCommonDigit = i;
-			occurences = count;
+			mostCommonDigit = currentDigit;
+			mostCommonDigitOccurences = currentDigitOccurences;
 		}
 	}
 
