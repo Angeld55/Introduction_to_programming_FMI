@@ -5,28 +5,39 @@ using namespace std;
 
 int main()
 {
-	unsigned int n;
+	int n;
 	cin >> n;
-	
-	if(n <= 1)
-	{
-		cout << "Not prime" << endl;
-		return 0;
-	}
 
-	bool isPrime = true;
-	double sqrtFromNumberToCheck = sqrt(n);
-	for (int i = 2; i <= sqrtFromNumberToCheck; i++)
+	for (int i = n; i > 1; i--)
 	{
-		if (n % i == 0)
+    		//check if i is prime
+		bool isPrime = true;
+		double temp = sqrt(i);
+		for (int k = 2; k <= temp; k++)
 		{
-			isPrime = false; 
-			break;
+			if (i % k == 0)
+			{
+				isPrime = false;
+				break;
+			}
+		}
+
+		if (!isPrime)
+			continue; //we don't need this number
+
+		//check how many time i devides n
+		int count = 0;
+		while (n % i == 0)
+		{
+			count++;
+			n /= i;
+		}
+
+		if (count >= 1)
+		{
+			cout << i << "^" << count << " ";
 		}
 	}
-	if(isPrime)
-		cout << "Prime";
-	else
-		cout << "Not prime";
-	return 0;
+
+
 }
