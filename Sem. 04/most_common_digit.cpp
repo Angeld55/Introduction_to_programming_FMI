@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+
+//задачата от предни семинар- решена с помощта на фунцкии.
 int countDigitOccurences(int n, int digit)
 {
 	if (digit > 9 || digit < 0)
