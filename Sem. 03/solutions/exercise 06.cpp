@@ -14,7 +14,7 @@ int main()
                   e;
                   
         if(res >= 0)
-            cout << i << ""
+            cout << i << " ";
     }
 
     return 0;
