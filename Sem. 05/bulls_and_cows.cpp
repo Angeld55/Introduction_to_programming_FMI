@@ -89,8 +89,7 @@ int getBullsAndCowsSum(int toGuess, int myGuess)
 void calculateBullsAndCows(int toGuess, int myGuess, int& bulls, int& cows)
 {
 	bulls = getBullsCount(toGuess, myGuess);
-	cows = 
-    getBullsAndCowsSum(toGuess, myGuess) - bulls;
+	cows = getBullsAndCowsSum(toGuess, myGuess) - bulls;
 }
 int main()
 {
