@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int DIGITS_COUNT = 3;
+const int DIGITS_COUNT = 4;
 
 int getLength(int n)
 {
