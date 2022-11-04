@@ -150,8 +150,7 @@ int main()
 	unsigned resMonth = 0;	// Резултата за месеца
 	unsigned resYear = 0;	// Резултата за годината
 	//
-
-	// 2. 1. 2024
+	
 	getNextDate(day, month, year, resDay, resMonth, resYear);
 	std::cout << "Date after " << day << "." << month << "." << year << " is " << resDay << "." << resMonth << "." << resYear << std::endl;
 
