@@ -3,146 +3,106 @@
 using namespace std;
 
 //task1
-int sumInIntervalSlow(int start, int finish)
+unsigned digitCountInNumber(int num)
 {
-	int result = 0;
-	for (int i = start; i <= finish; ++i)
-		result += i;
+	unsigned result = 0;
+	while (num != 0)
+	{
+		++result;
+		num /= 10;
+	}
 	return result;
 }
 
-int sumInIntervalFast(int start, int finish)
+int mthDigit(int n, unsigned m)
 {
-	return ((finish-start+1)*start +((finish - start + 1) * (finish - start) / 2));
+	if (m >= digitCountInNumber(n))
+		return -1;
+
+	for (unsigned i = 0; i < m; ++i)
+		n /= 10;
+	return n % 10;
 }
 
-//task2
-unsigned absN(int n)
+//swap binary numbers task
+//"Изнасяме" този код във функция, защото го преизползваме, като използвайки референции работим с "оригиналните" променливи
+void validation(bool& toReturn, unsigned& number, unsigned& counterLenNum, unsigned& counterOf1s)
 {
-	if (n < 0)
-		return -n;
-	return n;
-}
-
-//task3
-bool isTriangleValid(unsigned a, unsigned b, unsigned c)
-{
-
-	return ((a + b > c) && (a + c > b) && (b + c > a));
-}
-
-unsigned getDist(int x1, int y1, int x2, int y2)
-{
-	return sqrt((x1 * x2) + (y1 * y2));
-}
-
-unsigned perimeter(int x1, int y1, int x2, int y2, int x3, int y3)
-{
-	unsigned side1 = getDist(x1, y1, x2, y2);
-	unsigned side2 = getDist(x1, y1, x3, y3);
-	unsigned side3 = getDist(x2, y2, x3, y3);
-
-	if (isTriangleValid(side1, side2, side3))
-		return (getDist(x1, y1, x2, y2) + getDist(x1, y1, x3, y3) + getDist(x2, y2, x3, y3));
-
-
-	cout << "This triangle does not exist" << endl;
-	return 0;
-}
-
-unsigned getArea(int x1, int y1, int x2, int y2, int x3, int y3)
-{
-	unsigned side1 = getDist(x1, y1, x2, y2);
-	unsigned side2 = getDist(x1, y1, x3, y3);
-	unsigned side3 = getDist(x2, y2, x3, y3);
-
-	if (isTriangleValid(side1, side2, side3))
+	while (number != 0 && toReturn)
 	{
-		double p = (side1 + side2 + side3) / 2;
-		return sqrt(p * (p - side1) * (p - side2) * (p - side3));
+		++counterLenNum;
+		unsigned lastDigit = number % 10;
+		if (lastDigit == 0)
+		{
+			number /= 10;
+			continue;
+		}
+		else if (lastDigit == 1)
+		{
+			++counterOf1s;
+			number /= 10;
+			continue;
+		}
+		toReturn = false;
 	}
-
-	cout << "This triangle does not exist" << endl;
-	return 0;
 }
 
-//task 4
-bool isDigit(char a)
+
+bool validNumbers(unsigned number1,unsigned number2, unsigned n)
 {
-	return ((a >= '0') && (a <= '9'));
+	unsigned counterLenNum1 = 0;
+	unsigned counterOf1sNum1 = 0;
+	bool okay = true;
+	validation(okay, number1, counterLenNum1, counterOf1sNum1);
+
+	if (!okay)
+		return false;
+
+	unsigned counterLenNum2 = 0;
+	unsigned counterOf1sNum2 = 0;
+	validation(okay, number2, counterLenNum2, counterOf1sNum2);
+
+	return ((counterOf1sNum1 == counterOf1sNum2) && (counterLenNum1 <= n) && (counterLenNum2 <= n) && okay);
 }
 
-//task 5
-char toUpper(char a)
+//Правим функцията от булев тип, за да проследим дали входа е валиден или не
+bool inputNumbers(unsigned n, unsigned& number1, unsigned& number2)
 {
-	if (a < 'a' || a>'z')
-	{
-		cout << "Invalid argument!" << endl;
-		return a;
-	}
+	cin >> number1;
+	cin >> number2;
 
-	return a - 32;
+	return validNumbers(number1, number2, n);
 }
 
-//task 6
-char toLower(char a)
+int getSwaps()
 {
-	if (a < 'A' || a>'Z')
-	{
-		cout << "Invalid argument!" << endl;
-		return a;
-	}
-
-	return a + 32;
-}
-
-//task 7
-unsigned toNumber(char a)
-{
-	if (!isDigit(a))
-	{
-		cout << "Invalid argument!" << endl;
-		return a;
-	}
+	unsigned n = 0;
+	cin >> n;
+	unsigned number1 = 0, number2 = 0;
 	
-	return a - 48;
-}
+	if (!inputNumbers(n, number1, number2))
+		return 0;
 
-//task 8
-unsigned gcd(int n, int k)
-{
-	if (n < k)
+	unsigned result = 0;
+
+	if (number1 == number2)
+		return result;
+
+	//Броим едениците, които не са на "местата" си и те отговарят на броя swap-ове
+	while (number1 != 0 || number2 != 0)
 	{
-		int temp = n;
-		n = k;
-		k = temp;
+		unsigned lastDigitOfNum1 = number1 % 10;
+		if ((lastDigitOfNum1 == 1) && (lastDigitOfNum1 != number2 % 10))
+			++result;
+
+		number1 /= 10;
+		number2 /= 10;
 	}
 
-	while (k != 0)
-	{
-		int mod = n % k;
-		n = k;
-		k = mod;
-	}
-
-	return n;
+	return result;
 }
 
-unsigned lcm(int n, int k)
-{
-	if (n < 0)
-		n = absN(n);
-	if (k < 0)
-		k = absN(k);
 
-	return ((n * k) / gcd(n, k));
-}
-
-//task 10
-bool canWin(unsigned coins)
-{
-	return coins % 4 == 0;
-}
 
 int main()
 {
