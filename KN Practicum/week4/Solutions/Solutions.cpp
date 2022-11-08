@@ -45,8 +45,6 @@ unsigned perimeter(int x1, int y1, int x2, int y2, int x3, int y3)
 	if (isTriangleValid(side1, side2, side3))
 		return (getDist(x1, y1, x2, y2) + getDist(x1, y1, x3, y3) + getDist(x2, y2, x3, y3));
 
-
-	cout << "This triangle does not exist" << endl;
 	return 0;
 }
 
@@ -62,7 +60,6 @@ unsigned getArea(int x1, int y1, int x2, int y2, int x3, int y3)
 		return sqrt(p * (p - side1) * (p - side2) * (p - side3));
 	}
 
-	cout << "This triangle does not exist" << endl;
 	return 0;
 }
 
@@ -76,10 +73,7 @@ bool isDigit(char a)
 char toUpper(char a)
 {
 	if (a < 'a' || a>'z')
-	{
-		cout << "Invalid argument!" << endl;
 		return a;
-	}
 
 	return a - 32;
 }
@@ -88,10 +82,7 @@ char toUpper(char a)
 char toLower(char a)
 {
 	if (a < 'A' || a>'Z')
-	{
-		cout << "Invalid argument!" << endl;
 		return a;
-	}
 
 	return a + 32;
 }
@@ -100,10 +91,7 @@ char toLower(char a)
 unsigned toNumber(char a)
 {
 	if (!isDigit(a))
-	{
-		cout << "Invalid argument!" << endl;
 		return a;
-	}
 	
 	return a - 48;
 }
