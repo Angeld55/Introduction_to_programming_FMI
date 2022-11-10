@@ -78,9 +78,11 @@ int countDigitOccurences(int n, int digit)
 {
 	if (digit > 9 || digit < 0)
 		return -1; ///invalid input
-
+	
+	if(n == 0 && digit == 0)
+		return 1;
+	
 	int count = 0;
-
 	while (n != 0)
 	{
 		if (n % 10 == digit)
