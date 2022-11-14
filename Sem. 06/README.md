@@ -57,30 +57,32 @@ i е брой "отмествания" надясно.
 
 ## Подаване на масиви във функции
    ```c++
-    #include <iostream>
-    using namespace std;
-    void print(const int arr[], int len)
+#include <iostream>
+using namespace std;
+ 
+void print(const int arr[], size_t len)
+{
+    for (size_t i = 0; i < len; i++)
     {
-	    for(int i = 0; i < len; i++)
-	    {
-	        cout << arr[i] << " ";
-	    }
-	}
-	void increment(int[] arr, unsigned size)
-	{
-		for(unsigned i = 0; i < size; i++)
-			arr[i]++;
-	}
-	int main()
-	{
-	    const int SIZE = 4;
-	    int arr[SIZE] {1,2,3,4};
-    
-        increment(arr, SIZE);
-	    print(arr,SIZE);
-    
-	    return 0;
+        cout << arr[i] << ' ';
     }
+}
+void increment(int arr[], size_t len)
+{
+    for (size_t i = 0; i < len; i++)
+    {
+        arr[i]++;
+    }
+}
+
+int main()
+{
+    const int SIZE = 4;
+    int arr[SIZE] = { 1, 2, 3, 4 };
+ 
+    increment(arr, SIZE);
+    print(arr,SIZE);
+}
 ```
  Масивите се подават във функциите по адрес! 
  Т.е промените, които се правят върху масива във функцията, ще се отразят върху подадения като параметър масив!
