@@ -23,7 +23,7 @@
 	int arr[n]; //грешка!
 ```
 
-   ```c++
+```c++
 	const int SIZE = 4;
 	int arr[SIZE]; //ok!
 ```
@@ -33,15 +33,15 @@
 Достъпът става посредством индекси. Индексацията започва от 0. (защо?)
 
    ```c++
-   int arr[] = {1, 2, 400, 4, 5}
-    arr[3] = 44; //Присвоява на елементът на индекс 3 стойността 44.
+    int arr[] = {1, 2, 400, 4, 5}
+    arr[3] = 44; //Присвоява на елемента на индекс 3 стойността 44.
 					       // [1, 2, 400, 44, 5]
     cout << arr[2]; //Отпечатва на стандартния изход елементът на индекс 2 (400)
    
 ```
 arr не е самият масив, а указател към първия елемент.
    ```c++
-   int arr[] = {1, 2, 400, 4, 5}
+        int arr[] = {1, 2, 400, 4, 5}
 	cout << arr; //ще се отпечата АДРЕСА на масива, но не и самия масив.
 ```
 
@@ -57,30 +57,32 @@ i е брой "отмествания" надясно.
 
 ## Подаване на масиви във функции
    ```c++
-    #include <iostream>
-    using namespace std;
-    void print(const int arr[], int len)
+#include <iostream>
+using namespace std;
+ 
+void print(const int arr[], size_t len)
+{
+    for (size_t i = 0; i < len; i++)
     {
-	    for(int i = 0; i < len; i++)
-	    {
-	        cout << arr[i] << " ";
-	    }
-	}
-	void increment(int[] arr, unsigned size)
-	{
-		for(unsigned i = 0; i < size; i++)
-			arr[i]++;
-	}
-	int main()
-	{
-	    const int SIZE = 4;
-	    int arr[SIZE] {1,2,3,4};
-    
-        increment(arr, SIZE);
-	    print(arr,SIZE);
-    
-	    return 0;
+        cout << arr[i] << ' ';
     }
+}
+void increment(int arr[], size_t len)
+{
+    for (size_t i = 0; i < len; i++)
+    {
+        arr[i]++;
+    }
+}
+
+int main()
+{
+    const int SIZE = 4;
+    int arr[SIZE] = { 1, 2, 3, 4 };
+ 
+    increment(arr, SIZE);
+    print(arr,SIZE);
+}
 ```
  Масивите се подават във функциите по адрес! 
  Т.е промените, които се правят върху масива във функцията, ще се отразят върху подадения като параметър масив!

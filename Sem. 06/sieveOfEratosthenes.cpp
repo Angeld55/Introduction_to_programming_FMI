@@ -29,7 +29,7 @@ void sieveEratosthenes(bool sieve[], size_t n)
 	}
 }
 
-void printSolution(bool sieve[], int n)
+void printSolution(const bool sieve[], int n)
 {
 	for (size_t i = 2; i <= n; i++)
 	{
