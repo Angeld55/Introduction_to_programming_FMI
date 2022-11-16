@@ -30,7 +30,7 @@ void print(const char arr[], size_t size)
 	cout << endl;
 }
 
-//gets and Number in K numberical system and converts it to integer (in decimal)
+//"from" is in K numeral system. The function converts it to decimal (and the result is stored in an int)
 unsigned int fromRandomToDecimal(const char from[], unsigned k)
 {
 	int mult = 1;
@@ -42,7 +42,7 @@ unsigned int fromRandomToDecimal(const char from[], unsigned k)
 }
 
 
-//converts from decimal to k-th numerical system. The result is stored in the array "to"
+//converts number from decimal to a number in K numeral system. The result is stored in the array "to"
 void fromDecimalToRandom(unsigned n, char to[], unsigned k)
 {
 	int arrayIter = SIZE - 1;
@@ -61,7 +61,7 @@ void init(char arr[], size_t size, char ch)
 		arr[i] = ch;
 }
 
-//converts the number FROM (k numerical system) TO n numerical system
+//converts the number FROM (k numerical system) TO n numerical system. The result is stored in the array "to".
 void fromRandomToRandom(const char from[], int k, char to[], int n)
 {
 	unsigned int decimal = fromRandomToDecimal(from, k);
