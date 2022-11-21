@@ -1,9 +1,5 @@
-
-
 #include <iostream>
-
 using namespace std;
-
 
 unsigned int fromBinary(unsigned int n)
 {
