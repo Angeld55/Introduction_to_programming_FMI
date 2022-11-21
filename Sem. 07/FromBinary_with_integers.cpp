@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-unsigned int fromBinary(unsigned int n)
+unsigned int fromBinaryToDecimal(unsigned int n)
 {
 	unsigned int result = 0;
 	unsigned int mult = 1; //2^0
 	while (n != 0)
 	{
-		result += ((n % 2) * mult);
+		result += ((n % 10) * mult);
 		mult *= 2;
 		n /= 10;
 	}
@@ -17,7 +17,7 @@ unsigned int fromBinary(unsigned int n)
 
 int main()
 {
-    cout<< fromBinary(10111) << endl;
+    cout<< fromBinaryToDecimal(10111) << endl;
 
     return 0;
 }
