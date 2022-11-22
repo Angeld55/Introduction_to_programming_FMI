@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-const size_t SIZE = 5;
 int getIndexOfSymbol(char ch)
 {
 	if (ch >= '0' && ch <= '9')
@@ -31,21 +30,21 @@ void print(const char arr[], size_t size)
 }
 
 //"from" is in K numeral system. The function converts it to decimal (and the result is stored in an int)
-unsigned int fromRandomToDecimal(const char from[], unsigned k)
+unsigned int fromRandomToDecimal(const char from[], size_t size, unsigned k)
 {
 	int mult = 1;
 	int result = 0;
 
-	for (int i = SIZE - 1, mult = 1; i >= 0; i--, mult *= k)
+	for (int i = size - 1, mult = 1; i >= 0; i--, mult *= k)
 		result += getIndexOfSymbol(from[i]) * mult;
 	return result;
 }
 
 
 //converts number from decimal to a number in K numeral system. The result is stored in the array "to"
-void fromDecimalToRandom(unsigned n, char to[], unsigned k)
+void fromDecimalToRandom(unsigned n, char to[], size_t size, unsigned k)
 {
-	int arrayIter = SIZE - 1;
+	int arrayIter = size - 1;
 	while (n != 0)
 	{
 		int ind = n % k;
@@ -62,11 +61,13 @@ void init(char arr[], size_t size, char ch)
 }
 
 //converts the number FROM (k numerical system) TO n numerical system. The result is stored in the array "to".
-void fromRandomToRandom(const char from[], int k, char to[], int n)
+void fromRandomToRandom(const char from[], size_t fromSize, int k, char to[], size_t toSize, int n)
 {
-	unsigned int decimal = fromRandomToDecimal(from, k);
-	fromDecimalToRandom(decimal, to, n);
+	unsigned int decimal = fromRandomToDecimal(from, fromSize, k);
+	fromDecimalToRandom(decimal, to, toSize, n);
 }
+
+const size_t SIZE = 5;
 
 int main()
 {
@@ -75,7 +76,7 @@ int main()
 	char to[SIZE];
 	init(to, SIZE, '0');
 
-	fromRandomToRandom(from, 16, to, 10);
+	fromRandomToRandom(from, SIZE, 16, to, SIZE, 10);
 
 	print(to, SIZE);
 }
