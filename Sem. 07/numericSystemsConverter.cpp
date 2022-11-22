@@ -44,12 +44,11 @@ unsigned int fromRandomToDecimal(const char from[], size_t size, unsigned k)
 //converts number from decimal to a number in K numeral system. The result is stored in the array "to"
 void fromDecimalToRandom(unsigned n, char to[], size_t size, unsigned k)
 {
-	int arrayIter = size - 1;
-	while (n != 0)
+	for(int arrayIter = size - 1; arrayIter >= 0; arrayIter--)
 	{
 		int ind = n % k;
 		char current = getSymbolFromIndex(ind);
-		to[arrayIter--] = current;
+		to[arrayIter] = current;
 		n /= k;
 	}
 }
@@ -74,7 +73,7 @@ int main()
 	char from[] = { '0', '0', 'A','B', '3' };
 
 	char to[SIZE];
-	init(to, SIZE, '0');
+	//init(to, SIZE, '0');
 
 	fromRandomToRandom(from, SIZE, 16, to, SIZE, 10);
 
