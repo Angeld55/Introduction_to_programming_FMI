@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-unsigned int toBinary(unsigned int n)
+unsigned int toBinaryFromDecimal(unsigned int n)
 {
 	int result = 0;
 	int mult = 1;
