@@ -18,6 +18,6 @@ unsigned int toBinaryFromDecimal(unsigned int n)
 
 int main()
 {
-    cout<< toBinary(55) << endl;
+    cout<< toBinaryFromDecimal(55) << endl;
     return 0;
 }
