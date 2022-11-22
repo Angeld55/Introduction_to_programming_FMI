@@ -21,6 +21,9 @@ bool containsDigit(int n, int digit)
 {
 	if (digit < 0 || digit > 9)
 		return false; ///invalid input
+	
+	if(n == 0 && digit == 0)
+		return 1;
 
 	while (n != 0)
 	{
