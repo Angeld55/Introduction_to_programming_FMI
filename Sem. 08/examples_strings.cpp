@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 size_t myStrlen(const char* str)
 {
 	if (str == nullptr)
