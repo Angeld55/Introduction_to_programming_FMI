@@ -7,7 +7,9 @@ unsigned int convertFromChar(char ch)
 		return 10;
 	return ch - '0';
 }
-unsigned int toNumber(const char* str)
+//благодарности на https://github.com/hrisge и https://github.com/stoychoX за откритите нередности в кода
+
+unsigned int fromString(const char* str)
 {
 	unsigned int result = 0;
 	while (*str != '\0')
@@ -23,6 +25,6 @@ unsigned int toNumber(const char* str)
 int main()
 {
 	char str[] = "1234";
-	unsigned int n = toNumber(str);
+	unsigned int n = fromString(str);
 	cout << n;
 }
