@@ -7,7 +7,7 @@ unsigned int convertFromChar(char ch)
 		return 10;
 	return ch - '0';
 }
-//благодарности на https://github.com/hrisge и https://github.com/stoychoX за откритите нередности в кода
+//благодарности на https://github.com/hrisge и https://github.com/stoychoX за откритите сериозни нередности в името на фунцкията
 
 unsigned int fromString(const char* str)
 {
