@@ -1,3 +1,5 @@
+#include<iostream>
+
 void splitWords(const char* str, char words[64][64], size_t& wordsCount) {
 	size_t wStart = 0;
 	size_t wEnd = 0;
