@@ -43,6 +43,5 @@ int main()
     }
     printSolution(sieve, n);
  
- 
     return 0;
 }
