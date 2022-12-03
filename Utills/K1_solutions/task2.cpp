@@ -27,7 +27,7 @@ void printSolution(const bool* sieve, size_t size)
  
 int main()
 {
-    size_t MAX_SIZE = 1025;
+    const size_t MAX_SIZE = 1024;
     bool sieve[MAX_SIZE];
  
     int n;
