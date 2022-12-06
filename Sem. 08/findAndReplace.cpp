@@ -44,7 +44,7 @@ void findAndReplace(char* text, const char* pattern, const char* replace)
 
 int main()
 {
-	char str[1024] = "Hello my friend. Are my friend?";
+	char str[1024] = "Hello my friend. Are you my friend?";
 	char pattern[] = "friend";
 	char replace[] = "enemy";
 
