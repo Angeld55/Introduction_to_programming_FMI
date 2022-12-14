@@ -54,4 +54,7 @@ int main()
     getOnlySmallAndOnlyBigCharsStrings("abDDcdef", lowers, uppers);
     
     cout << lowers << endl << uppers;
+    
+    delete[] lowers;
+    delete[] uppers;
 }
