@@ -83,7 +83,7 @@ void censoreOrDiscensore(char** words, int ind)
 	else
 	{
 		size_t wordLength = strlen(words[ind]);
-		for (int i = wordLength; i >= 0; i--)
+		for (int i = wordLength; i >= 0; i--) // shifting so we have the original word saved (in case of discensore)
 			words[ind][i + 2] = words[ind][i];
 		words[ind][0] = '*';
 		words[ind][1] = '\0';
