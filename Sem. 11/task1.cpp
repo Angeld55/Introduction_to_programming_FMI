@@ -4,37 +4,37 @@
 using namespace std;
 
 const int SIZE = 10;
-void init(char* arr[])
+void init(char* playersNamesArr[])
 {
 	for (int i = 0; i < SIZE; i++)
-		arr[i] = nullptr;
+		playersNamesArr[i] = nullptr;
 }
 
 
-void getPlayers(char* arr[SIZE], int n)
+void getPlayersNames(char* playersNamesArr[SIZE], int n)
 {
 	for (int i = 0; i < n; i++)
 	{
 		char buff[1024];
 		cin.getline(buff, 1024);
 
-		arr[i] = new char[strlen(buff) + 1];
-		strcpy(arr[i], buff);
+		playersNamesArr[i] = new char[strlen(buff) + 1];
+		strcpy(playersNamesArr[i], buff);
 
 	}
 }
 
-void freePlayers(char* arr[], int n)
+void freePlayers(char* playersNamesArr[], int n)
 {
 	for (int i = 0; i < n; i++)
-		delete[] arr[i];
+		delete[] playersNamesArr[i];
 }
 
-void print(char* arr[], const int* scores, int n)
+void print(char* playersNamesArr[], const int* scores, int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		cout << arr[i] << " " << scores[i] << endl;
+		cout << playersNamesArr[i] << " " << scores[i] << endl;
 	}
 }
 
@@ -61,12 +61,12 @@ void swap(char*& firstName, char*& secondName)
 	firstName = secondName;
 	secondName = temp;
 }
-void goToCorrectPosition(char* arr[], int* scores, int playerInd)
+void goToCorrectPosition(char* playersNamesArr[], int* scores, int playerInd)
 {
 	while (playerInd > 0 && scores[playerInd] > scores[playerInd - 1])
 	{
 		swap(scores[playerInd], scores[playerInd - 1]);
-		swap(arr[playerInd], arr[playerInd - 1]);
+		swap(playersNamesArr[playerInd], playersNamesArr[playerInd - 1]);
 	}
 }
 
@@ -76,11 +76,11 @@ int main()
 	cin >> n;
 	cin.ignore();
 
-	char* arr[SIZE];
+	char* playersNamesArr[SIZE];
 	int scores[SIZE] = { 0 };
 
-	getPlayers(arr, n);
-	print(arr, scores, n);
+	getPlayersNames(playersNamesArr, n);
+	print(playersNamesArr, scores, n);
 
 
 	while (1)
@@ -95,19 +95,19 @@ int main()
 		cin >> points;
 		cin.ignore();
 
-		int ind = getIndexOfPlayer(name, arr, n);
+		int ind = getIndexOfPlayer(name, playersNamesArr, n);
 		if (ind == -1)
 		{
 			cout << "No such player!" << endl;
 			continue;
 		}
 		scores[ind] += points;
-		goToCorrectPosition(arr, scores, ind);
-		print(arr, scores, n);
+		goToCorrectPosition(playersNamesArr, scores, ind);
+		print(playersNamesArr, scores, n);
 
 	}
 
-	freePlayers(arr, n);
+	freePlayers(playersNamesArr, n);
 
 }
 
