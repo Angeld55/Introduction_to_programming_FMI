@@ -37,18 +37,20 @@ void fillWordsToArrayOfWords(char** textArr, char* text)
 {
 	size_t wordIndex = 0;
 	bool isLast = false;
-	while (*text)
+	while (1)
 	{
 		size_t wordEnd = getFirstNotValidSymbolIndex(text);
 		
 		if (text[wordEnd] == '\0')
 			isLast = true;
-		text[wordEnd] = '\0';
+		
+		text[wordEnd] = '\0'; //temp for strcpy
 		textArr[wordIndex] = new char[wordEnd + 3];
 		strcpy(textArr[wordIndex], text);
 		text[wordEnd] = ' ';
 		text += (wordEnd);
 		wordIndex++;
+		
 		if (isLast)
 			return;
 		text++;
