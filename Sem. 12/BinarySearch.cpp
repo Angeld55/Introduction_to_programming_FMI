@@ -21,6 +21,6 @@ int binarySearch(const int* arr, size_t size, int el)
 
 int main()
 {
-	int arr[] = { 7,6,5,4,3,2 };
+	int arr[] = { 1, 2, 5, 9, 13, 17};
 	cout << binarySearch(arr, 6, 30);
 }
