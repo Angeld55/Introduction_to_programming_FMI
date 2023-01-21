@@ -24,6 +24,7 @@
 #### Алгоритми за сортиране.
  - Bubble sort
  - Selection sort
+ - Insertion sort
 
 
 
