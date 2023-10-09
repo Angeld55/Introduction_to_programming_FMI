@@ -4,7 +4,7 @@
 #include <iostream>
 int main()
 {
-    std::cout << (false || ((true && true) || false)) && false;
+    std::cout << ((false || ((true && true) || false)) && false);
 }
 ```
 **2.** Какво ще отпечата на екрана следният код?
