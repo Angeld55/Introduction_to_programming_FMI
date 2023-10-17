@@ -1,34 +1,31 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
 
-int main() 
+
+int main()
 {
 	int n;
 	cin >> n;
 
-	int mostCommonDigit = -1;
-	int mostCommonDigitOccurences = 0;
-	
-	for (int currentDigit = 0; currentDigit <= 9; currentDigit++)
+	for (int i = 2; i <= n; i++)
 	{
-		int copyOfN = n;
-		int currentDigitOccurences = 0;
-		while (copyOfN != 0)
+
+		//check how many time i devides n
+		int count = 0;
+		while (n % i == 0)
 		{
-			int lastDigit = copyOfN % 10;
-			if (lastDigit == currentDigit)
-				currentDigitOccurences++;
-			copyOfN /= 10; //removes the last digit;
+			count++;
+			n /= i;
 		}
 
-		if (currentDigitOccurences > mostCommonDigitOccurences)
-		{
-			mostCommonDigit = currentDigit;
-			mostCommonDigitOccurences = currentDigitOccurences;
+		if (count >= 1)
+		{	
+			cout << i;
+			if(count >= 2)
+				cout << "^" << count << " ";
 		}
 	}
 
-	cout << mostCommonDigit;
+
 }

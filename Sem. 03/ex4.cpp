@@ -34,8 +34,10 @@ int main()
 		}
 
 		if (count >= 1)
-		{
-			cout << i << "^" << count << " ";
+		{	
+			cout << i;
+			if(count >= 2)
+				cout << "^" << count << " ";
 		}
 	}
 
