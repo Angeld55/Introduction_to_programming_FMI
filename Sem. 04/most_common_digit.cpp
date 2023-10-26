@@ -2,7 +2,7 @@
 using namespace std;
 
 
-//задачата от предни семинар- решена с помощта на фунцкии.
+//задачата от предни семинар- решена с помощта на функции.
 int countDigitOccurences(int n, int digit)
 {
 	if (digit > 9 || digit < 0)
