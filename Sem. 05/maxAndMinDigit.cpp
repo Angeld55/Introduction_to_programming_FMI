@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 void getMinAndMaxDigits(unsigned n, unsigned& maxDigit, unsigned& minDigit)
