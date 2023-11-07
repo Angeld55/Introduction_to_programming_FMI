@@ -15,7 +15,7 @@ int linearSearch(const int arr[], size_t len, int element)
 
 int main()
 {
-	const size_t ARR_SIZE = 5;
+	constexpr size_t ARR_SIZE = 5;
 	int arr[ARR_SIZE] = { 5, 4, 3, 2, 1 };
 
 	bool containsTwo = linearSearch(arr, ARR_SIZE, 2) >= 0;
