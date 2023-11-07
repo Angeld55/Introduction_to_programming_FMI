@@ -30,7 +30,7 @@ void setData(int arr[], size_t size, int data)
 
 int main()
 {
-	const size_t ARR_SIZE = 5;
+	constexpr size_t ARR_SIZE = 5;
 	int arr[ARR_SIZE];
 	setData(arr, 5, 3);
 	printArr(arr, ARR_SIZE);
