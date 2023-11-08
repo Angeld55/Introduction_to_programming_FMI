@@ -19,7 +19,7 @@ void markAsNotPrime(bool sieve[], int len, int current)
 }
 void sieveErathostenes(bool sieve[], int len)
 {
-	for (int i = 0; i < len; i++)
+	for (int i = 2; i <= len; i++)
 	{
 		if (!sieve[i])
 		{
