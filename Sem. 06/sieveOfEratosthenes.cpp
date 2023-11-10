@@ -38,6 +38,5 @@ int main()
 	cin >> n;
 	bool sieve[MAX_SIZE];
 	assignValueToAllCells(sieve, n, false);
-
-
+	sieveErathostenes(sieve, n);
 }  
