@@ -25,5 +25,5 @@ int main()
 {
 	constexpr int size = 10;
 	int sortedArr[size] = { 1,5,12,15,20 };
-	cout << binarySearch(sortedArr, 10, 15);
+	cout << binarySearch(sortedArr, size, 15);
 }  
