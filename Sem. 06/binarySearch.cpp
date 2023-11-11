@@ -23,7 +23,7 @@ int binarySearch(const int arr[], int len, int el)
 
 int main()
 {
-	constexpr int size = 10;
+	constexpr int size = 5;
 	int sortedArr[size] = { 1,5,12,15,20 };
 	cout << binarySearch(sortedArr, size, 15);
 }  
