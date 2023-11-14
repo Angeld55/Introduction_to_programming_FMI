@@ -66,26 +66,25 @@ void fromRandomToRandom(const char from[], size_t fromSize, int k, char to[], si
 	fromDecimalToRandom(decimal, to, toSize, n);
 }
 
-const size_t SIZE = 5;
 
 int main()
 {
-    
+    constexpr int SIZE = 5;
     {
         char from[] = { '0', 'A', 'A','B', '3' };
-        unsigned n = fromRandomToDecimal(from, 5, 16); //AAB3 in hex to decimal;
+        unsigned n = fromRandomToDecimal(from, SIZE, 16); //AAB3 in hex to decimal;
         cout << n << std::endl;;
         
     }
     
     {
-        char to[5] = {};
-        fromDecimalToRandom(1234, to, 5, 16); //124 in decimal to hex;
-        print(to, 5);
+        char to[SIZE] = {};
+        fromDecimalToRandom(1234, to, SIZE, 16); //124 in decimal to hex;
+        print(to, SIZE);
     }
     
     {
-        char from[] = { '0', '0', 'A','B', '3' };
+        char from[SIZE] = { '0', '0', 'A','B', '3' };
         
         char to[SIZE];
         //init(to, SIZE, '0');
