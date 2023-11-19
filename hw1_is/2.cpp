@@ -31,7 +31,7 @@ bool isPermutation(unsigned n, unsigned k)
 }
 void printPermutations(unsigned n)
 {
-	for (int i = 1000; i < 9999; i++)
+	for (int i = 1000; i <= 9999; i++)
 	{
 		if (isPermutation(n, i))
 			cout << i << endl;
