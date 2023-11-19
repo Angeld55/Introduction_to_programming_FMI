@@ -160,7 +160,7 @@ void printCandidates(const unsigned candidates[], size_t size, unsigned k)
 
 int main()
 {
-    constexpr unsigned MAX_CANDIDATES_COUNT = 10 * 9 * 8 * 7 * 6; //if k = 6 this is the maximum candidates count
+    constexpr unsigned MAX_CANDIDATES_COUNT = 10 * 9 * 8 * 7 * 6 * 5; //if k = 6 this is the maximum candidates count
     unsigned candidates[MAX_CANDIDATES_COUNT];
 
 	unsigned k;
