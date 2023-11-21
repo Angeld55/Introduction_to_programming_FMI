@@ -3,7 +3,8 @@ using namespace std;
 
 bool isEven(int n)
 {
-	return !(n & 1);
+	int mask = 1;
+	return !(n & mask);
 }
 int main()
 {
