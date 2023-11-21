@@ -18,18 +18,31 @@ unsigned int reverse(unsigned int n)
     }
     return reversed;
 }
+
+
 unsigned int concatNumbers(unsigned int a, unsigned int b)
 {
-    unsigned int result = a; 
-    unsigned int reversedB = reverse(b);
-    
-    while(reversedB != 0)
-    {
-        int lastDigit = reversedB % 10;
-        result = concatDigitOnBack(result, lastDigit);
-        reversedB /= 10;
-    }
-    return result;
+ 	if (a == 0)
+		return 0;
+
+	if (b == 0)
+		return concatDigitAtBack(a, 0);
+
+	unsigned result = a;
+	unsigned reversedB = reverse(b);
+
+	while (reversedB != 0)
+	{
+		int lastDigit = reversedB % 10;
+		result = concatDigitAtBack(result, lastDigit);
+		reversedB /= 10;
+	}
+	while (b % 10 == 0)
+	{
+		result = concatDigitAtBack(result, 0);
+		b /= 10;
+	}
+	return result;
 }
 
 int main()
