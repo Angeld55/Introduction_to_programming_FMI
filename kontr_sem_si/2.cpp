@@ -10,8 +10,8 @@ int binarySearchEvenOddArr(const unsigned arr[], size_t len)
 	{
 		int mid = left + (right - left) / 2;
 		
-        if(arr[mid] == 0)
-            return mid;
+	        if(arr[mid] == 0)
+	            return mid;
             
 		if (arr[mid] % 2 == 0)
 			left = mid + 1;
