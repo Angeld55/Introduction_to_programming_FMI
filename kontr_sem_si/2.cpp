@@ -25,13 +25,13 @@ int binarySearchEvenOddArr(const unsigned arr[], size_t len)
 int main()
 {
     {
-        constexpr size_t size = 5;
+        constexpr size_t size = 7;
         
         unsigned arr[] = {2,0,3,5,7,9,1};
         cout << "Zero at index: " << binarySearchEvenOddArr(arr, size) << endl;
     }    
     {
-        constexpr size_t size = 5;
+        constexpr size_t size = 11;
         
         unsigned arr[] = {2,4,5,5,5,5,5,5,5,5,3};
         cout << "Zero at index: " << binarySearchEvenOddArr(arr, size) << endl;
