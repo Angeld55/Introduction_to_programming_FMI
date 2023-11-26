@@ -7,8 +7,8 @@ int getIndexOfSymbol(char ch)
 		return ch - '0';
 	else if (ch >= 'A' && ch <= 'Z')
 		return 10 + (ch - 'A');
-  else if (ch >= 'a' && ch <= 'z')
-    return 10 + (ch - 'a');
+        else if (ch >= 'a' && ch <= 'z')
+                return 10 + (ch - 'a');
 	else
 		return -1;
 }
