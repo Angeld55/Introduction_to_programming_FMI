@@ -15,7 +15,7 @@ void printSolution(const bool[] arr, size_t size)
 }
 
 
-void markNotNeededNumbers(bool* arr, size_t size, unsigned int queryNumber)
+void markNotNeededNumbers(bool[] arr, size_t size, unsigned int queryNumber)
 
 {
     for (size_t i = 1; i <= size; i++)
