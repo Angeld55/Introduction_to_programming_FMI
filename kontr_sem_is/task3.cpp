@@ -9,7 +9,7 @@ void init(bool arr[], size_t size, bool value)
 
 void printSolution(const bool[] arr, size_t size)
 {
-    for (size_t i = 1; i <= size; i++)
+    for (size_t i = 1; i < size; i++)
         if (arr[i])
             cout << i << ' ';
 }
