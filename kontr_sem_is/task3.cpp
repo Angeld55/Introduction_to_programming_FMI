@@ -25,7 +25,7 @@ void markNotNeededNumbers(bool[] arr, size_t size, unsigned int queryNumber)
 
 int main()
 {
-    const size_t MAX_SIZE = 1024;
+    constexpr size_t MAX_SIZE = 1024;
     bool arr[MAX_SIZE];
     
     unsigned int n;
