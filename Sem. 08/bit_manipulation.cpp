@@ -1,7 +1,5 @@
 bool checkBit(unsigned int n, unsigned ind)
 {
-    if(ind > 31)
-        return false;
     unsigned int mask = 1;
     mask <<= ind;
     return (mask & n) == mask;
