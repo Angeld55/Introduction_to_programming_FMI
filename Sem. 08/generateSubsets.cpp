@@ -23,9 +23,7 @@ void generateSubsets(const int arr[], size_t size)
 	//size <= 32
 	unsigned pt = powerOfTwo(size);
 	for (unsigned i = 0; i < pt; i++)
-	{
 		printSubset(arr, size, i);
-	}
 }
 int main()
 {
