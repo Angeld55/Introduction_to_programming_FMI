@@ -25,9 +25,8 @@ void makeAllZeros(double matrix[][3], size_t rows, size_t colls, int currentRow)
 {
 	for (int i = 0; i < rows; i++)
 	{
-		if (i == currentRow)
-			continue;
-		substract(matrix[i], matrix[currentRow], matrix[i][currentRow], colls);
+		if (i != currentRow)
+			substract(matrix[i], matrix[currentRow], matrix[i][currentRow], colls);
 	}
 }
 
