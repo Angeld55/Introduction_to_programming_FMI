@@ -32,7 +32,7 @@ unsigned toggleBitOne(unsigned int n, unsigned int ind)
     unsigned int mask = 1;
     mask <<= ind;
     
-    return n | mask;
+    return n ^ mask;
 }
 
 int main()
