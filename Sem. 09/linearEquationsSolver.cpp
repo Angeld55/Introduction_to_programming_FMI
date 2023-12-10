@@ -5,7 +5,7 @@ void printMatrix(double arr[][3], size_t rows, size_t colls)
 {
 	for (int i = 0; i < rows; i++)
 	{
-		for (int j = 0; j< colls;j ++)
+		for (int j = 0; j < colls; j++)
 		{
 			cout << arr[i][j]<< " ";
 		}
@@ -54,7 +54,7 @@ int main()
 	constexpr size_t colls = 3;
 
 	double m[rows][colls] = { {2, 6, 40},  // 2x + 6y = 40
-							  {4, 1, 14} };// 4x +  y = 14
+                                  {4, 1, 14} };// 4x +  y = 14
 
 	double result[rows];
 	gauss(m, rows, result);
