@@ -6,9 +6,7 @@ void printMatrix(double arr[][3], size_t rows, size_t colls)
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < colls; j++)
-		{
-			cout << arr[i][j]<< " ";
-		}
+			cout << arr[i][j] << " ";
 		cout << endl;
 	}
 }
