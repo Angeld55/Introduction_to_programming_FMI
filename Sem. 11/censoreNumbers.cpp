@@ -56,8 +56,8 @@ char* censoreNumbers(const char* str)
 		return nullptr;
 
 	size_t resultSize = myStrlen(str)
-						- getDigitsCount(str)
-						+ getNumbersCount(str);
+			   - getDigitsCount(str)
+	                   + getNumbersCount(str);
 
 	char* result = new char[resultSize + 1]; //!!!!! '\0'
 	unsigned resultIndex = 0;
