@@ -33,13 +33,13 @@
  - Указателят има неутрална стойност (nullptr), а референцията няма.
  - Може да се направи масив от указатели, но не и масив от референции.
 
-
-   ```c++
+```c++
    int arr[] = {1, 2, 3};
 int* ptr = arr;
 ```
 
 ![enter image description here](https://i.ibb.co/cDcX8st/Untitled-Diagram-drawio-3.png)
+
 
 ```c++
 	ptr++;
