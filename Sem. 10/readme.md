@@ -38,7 +38,8 @@ int* ptr = arr;
 ```
 
 ![enter image description here](https://i.ibb.co/cDcX8st/Untitled-Diagram-drawio-3.png)
-   ```c++
+
+```c++
 	ptr++;
 	cout << ptr[0]; //2;
 	cout << ptr[1]; //3;
