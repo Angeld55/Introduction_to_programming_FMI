@@ -40,7 +40,7 @@ void input(char field[][N], int& x, int& y)
 	}
 }
 
-int getConsecutiveDirection(char field[][N], int row, int coll, int rowMove, int collMove)
+int getConsecutiveDirection(const char field[][N], int row, int coll, int rowMove, int collMove)
 {
 	char ch = field[row][coll];
 
@@ -54,13 +54,13 @@ int getConsecutiveDirection(char field[][N], int row, int coll, int rowMove, int
 	return count;
 }
 
-unsigned getConsecutiveOnLine(char field[][N], int row, int coll, int rowMove, int collMove)
+unsigned getConsecutiveOnLine(const char field[][N], int row, int coll, int rowMove, int collMove)
 {
     return getConsecutiveDirection(field, row, coll, rowMove, collMove) +
            getConsecutiveDirection(field, row, coll, -rowMove, -collMove) - 1;//because we count the starting point twice.
 }
 
-bool isWinningMove(char field[][N], int row, int coll)
+bool isWinningMove(const char field[][N], int row, int coll)
 {
 	return   getConsecutiveOnLine(field, row, coll, 0,  1) >= LINE_LENGTH || //horizontal
 	         getConsecutiveOnLine(field, row, coll, 1,  0) >= LINE_LENGTH || //vertical
