@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 unsigned myStrlen(const char* str)
 {
 	if (!str)
@@ -46,14 +45,24 @@ int myStrcmp(const char* first, const char* second)
 	}
 
 	return (*first - *second);
+	 
+}
 
+
+void myStrcat(char* first, const char* second)
+{
+	if (!first || !second)
+		return;
+	
+	size_t firstLen = myStrlen(first);
+	first += firstLen;
+	myStrcpy(second, first);
 }
 int main()
 {
-	char str[] = "ABCY";
-	char str2[10];
-	cout << myStrlen(str) << endl;
-	myStrcpy(str, str2);
-	cout << str2 << endl;
-	cout << myStrcmp(str, str2) << endl;
+	char str[20] = "ABC";
+	char str2[] = "XY";
+	myStrCat(str, str2);
+
+	cout << str;
 }
