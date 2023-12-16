@@ -38,7 +38,7 @@ int myStrcmp(const char* first, const char* second)
 		return 0; //some error value
 
 	//we skip the common prefix, but not the terminating zero!
-	while ((*first) && (*second) && ((*first) == (*second)))
+	while ((*first) && (*second) && ((*first) == (*second))) //acutally the (*second) check can be missed here.
 	{
 		first++;
 		second++;
