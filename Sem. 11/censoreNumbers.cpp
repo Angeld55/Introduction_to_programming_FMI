@@ -39,12 +39,10 @@ unsigned getNumbersCount(const char* str)
 	if (!str)
 		return 0;
 	unsigned count = 0;
-	bool wasLasDigit = false;
 	while (*str)
 	{
-		if (isDigit(*str) && !wasLasDigit)
+		if (isDigit(*str) && !isDigit(*(str + 1))); //we count the end of the numbers. Str + 1 is allowed, because we have a terminating zero (which is not a digit) at the end (we won't go out of bounds)
 			count++;
-		wasLasDigit = isDigit(*str);
 		str++;
 	}
 	return count;
