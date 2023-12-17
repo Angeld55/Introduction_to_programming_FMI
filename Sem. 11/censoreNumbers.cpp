@@ -41,7 +41,7 @@ unsigned getNumbersCount(const char* str)
 	unsigned count = 0;
 	while (*str)
 	{
-		if (isDigit(*str) && !isDigit(*(str + 1))); //we count the end of the numbers. Str + 1 is allowed, because we have a terminating zero (which is not a digit) at the end (we won't go out of bounds)
+		if (isDigit(*str) && !isDigit(*(str + 1))) //we count the end of the numbers. Str + 1 is allowed, because we have a terminating zero (which is not a digit) at the end (we won't go out of bounds)
 			count++;
 		str++;
 	}
