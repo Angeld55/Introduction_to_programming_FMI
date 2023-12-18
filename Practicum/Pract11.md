@@ -110,3 +110,6 @@ Hello hi hey
 ```c++
 Hello hey
 ```
+
+
+[**Линк към материалът за четене от и писане във файлове**](https://github.com/desiish/UP_Pract_2023_2024/blob/main/utils/work_with_files.md)
