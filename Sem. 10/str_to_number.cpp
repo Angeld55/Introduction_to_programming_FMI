@@ -29,9 +29,9 @@ int convertStrToSigned(const char* str)
 		return 0;
 
 	if (*str == '-')
-		return -1 * convertFromStr(str + 1);
+		return -1 * convertStrToUnsigned(str + 1);
 	else
-		return convertFromStr(str);
+		return convertStrToUnsigned(str);
 }
 
 int main()
