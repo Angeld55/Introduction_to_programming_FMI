@@ -54,5 +54,7 @@ int main()
     getLowerAndUpperStrings("AAqew12423BBq", lower, upper);
 
     cout << lower << endl << upper << endl;
+    delete[] lower;
+    delete[] upper;
     return 0;
 }
