@@ -60,7 +60,6 @@ char* censoreNumbers(const char* str)
 	char* result = new char[resultSize + 1]; //!!!!! '\0'
 	unsigned resultIndex = 0;
 	
-	bool wasLastStar = false;
 	while (*str)
 	{
 		if (!isDigit(*str))
