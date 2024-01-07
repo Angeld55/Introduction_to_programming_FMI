@@ -35,9 +35,8 @@ void printArr(const int* arr, size_t size)
 int main()
 {
 	constexpr size_t SIZE = 5;
-	int arr[SIZE] = { 1,2,3,5,4 };
+	int arr[SIZE] = { 5, 4, 3, 2, 1 };
 
 	bubbleSort(arr, SIZE);
-	for (int i = 0; i < SIZE; i++)
-		cout << arr[i] << " ";
+	printArr(arr, SIZE);
 }
