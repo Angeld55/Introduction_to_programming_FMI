@@ -42,7 +42,7 @@ char** split(const char* str, char separator)
         int sepIndex = getEndOfTokenIndex(str, separator);
         
         char* currentToken = new char[sepIndex + 1];
-        currentToken[sepIndex - 1] = '\0'; //the string sentinel
+        currentToken[sepIndex] = '\0'; //the string sentinel
         
         copyNChars(str, currentToken, sepIndex);
         str += sepIndex; //skip the token
