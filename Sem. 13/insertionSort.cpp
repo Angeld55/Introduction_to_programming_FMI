@@ -29,7 +29,5 @@ int main()
 	int arr[SIZE] = { 5,4,3,2,1 };
 
 	insertionSort(arr, SIZE);
-	for (int i = 0; i < SIZE; i++)
-		cout << arr[i] << " ";
-
+	printArr(arr, SIZE);
 }
