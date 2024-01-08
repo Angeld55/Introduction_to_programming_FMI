@@ -22,6 +22,9 @@ void bubbleSort(int* arr, size_t size)
 				currentIterLastSwapped = j;
 			}
 		}
+		if (currentIterLastSwapped == 0) {
+			return;
+		}
 		lastSwapedIndex = currentIterLastSwapped;
 	}
 }
