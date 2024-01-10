@@ -50,6 +50,12 @@ char** tokenize(const char* str, size_t& size)
     while(*str)
     {
         skipInvalid(str);
+
+        if (!(*str))
+        {
+            break;
+        }
+        
         char* word = getNextWord(str); 
             
         words[currentWordIndex++] = word;
