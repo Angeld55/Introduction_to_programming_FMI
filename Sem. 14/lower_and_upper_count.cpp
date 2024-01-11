@@ -14,18 +14,13 @@ bool isLower(char ch)
 void getLowerAndUpperCount(const char* str, int& lowerCount, int& capitalCount)
 {
     if(*str == '\0')
-    {
-        lowerCount = capitalCount = 0;
-        return;
-    }
+        return;     
     
-    getLowerAndUpperCount(str + 1, lowerCount, capitalCount);
-           
     if(isCapital(str[0]))
         capitalCount++;
     else if(isLower(str[0]))
         lowerCount++;
-   
+    getLowerAndUpperCount(str + 1, lowerCount, capitalCount);
 } 
 
 int main()
