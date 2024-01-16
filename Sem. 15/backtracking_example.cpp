@@ -9,7 +9,7 @@ bool validCoordinates(int x, int y)
 {
     return x >= 0 && y  >= 0 && x < rows && y < colls;
 }
-bool findPathRec(char field[rows][colls], bool visited[rows][colls], int currentX, int currentY, int destX, int destY)
+bool findPathRec(const char field[rows][colls], bool visited[rows][colls], int currentX, int currentY, int destX, int destY)
 {
     if(!validCoordinates(currentX, currentY) || field[currentX][currentY] != ' ' || visited[currentX][currentY])
         return false;
@@ -28,7 +28,7 @@ bool findPathRec(char field[rows][colls], bool visited[rows][colls], int current
     return foundPath;
 }
 
-void printPath(char field[rows][colls], bool visited[rows][colls])
+void printPath(const char field[rows][colls], const bool visited[rows][colls])
 {
     for(int i = 0; i < rows; i++)
     {
@@ -43,7 +43,7 @@ void printPath(char field[rows][colls], bool visited[rows][colls])
     }
 }
 
-bool findPath(char field[rows][colls], int startX, int startY, int destX, int destY)
+bool findPath(const char field[rows][colls], int startX, int startY, int destX, int destY)
 {
     bool visited[rows][colls]{false};
     bool containsPath = findPathRec(field, visited, startX, startY, destX, destY);
