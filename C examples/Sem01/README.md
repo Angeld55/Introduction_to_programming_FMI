@@ -22,7 +22,7 @@
 ```c
 <dataType> <variableName> = <value>;
 ```
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_01/images/Variable.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem01/images/Variable.png)
 
 ---
 
@@ -43,7 +43,7 @@
 4. Булеви стойности (**Booleans**)
 - В C няма директен булев тип, но можем да използваме стойности като 0 (false) и 1 (true).
 
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_01/images/DataTypes.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem01/images/DataTypes.png)
 
 ## Преобразуване между типове
 
@@ -130,7 +130,7 @@
 - **Асоциативност**;
 - **Позиция на оператора спярмо аргумента** -  *префиксен*, *инфиксен*  и  *суфиксен (постфиксен)*.
 
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_01/images/OperatorCharacteristics.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem01/images/OperatorCharacteristics.png)
 
 ---
 
