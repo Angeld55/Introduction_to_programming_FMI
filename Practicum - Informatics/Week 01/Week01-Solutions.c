@@ -124,7 +124,7 @@ int main()
 
 	int symbolsASCIISum = (symbol1 + symbol2 + symbol3 + symbol4 + symbol5 + symbol6);
 
-	int isDivisibleByTree = (symbolsASCIISum % 3 == 0);
+	int isDivisibleByThree = (symbolsASCIISum % 3 == 0);
 
 	// task 14
 	int number = 9;
@@ -137,7 +137,9 @@ int main()
 	int number4 = 8;
 	int number5 = 13;
 
-	int isFibbonacci = (number3 == number2 + number1) && (number4 = number3 + number2) && (number5 == number4 + number3);
+	int isFibbonacci = (number3 == number2 + number1) && 
+		(number4 = number3 + number2) && 
+		(number5 == number4 + number3);
 
 	// task 16
 	int firstIntervalA = 2;
