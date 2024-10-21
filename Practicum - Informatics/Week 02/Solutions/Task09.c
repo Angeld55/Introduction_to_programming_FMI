@@ -3,7 +3,7 @@
 int main() {
     double num1, num2;
     char op;
-    scanf("%lf %c %lf", &num1, &op, &num2);
+    scanf_s("%lf %c %lf", &num1, &op, 1, &num2);
 
     switch (op) {
     case '+': printf("%.2lf\n", num1 + num2); break;

@@ -2,7 +2,7 @@
 
 int main() {
     double speed;
-    scanf("%lf", &speed);
+    scanf_s("%lf", &speed);
 
     if (speed <= 10) {
         printf("slow\n");

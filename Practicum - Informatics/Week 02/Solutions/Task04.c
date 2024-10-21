@@ -5,22 +5,22 @@ int main() {
     double a, b, result;
     double PI = 3.14;
 
-    scanf(" %c", &figure);
+    scanf_s(" %c", &figure, 1);
 
     if (figure == 's') {
-        scanf("%lf", &a);
+        scanf_s("%lf", &a);
         result = a * a;
     }
     else if (figure == 'r') {
-        scanf("%lf %lf", &a, &b);
+        scanf_s("%lf %lf", &a, &b);
         result = a * b;
     }
     else if (figure == 'c') {
-        scanf("%lf", &a);
+        scanf_s("%lf", &a);
         result = PI * a * a;
     }
     else if (figure == 't') {
-        scanf("%lf %lf", &a, &b);
+        scanf_s("%lf %lf", &a, &b);
         result = (a * b) / 2;
     }
 

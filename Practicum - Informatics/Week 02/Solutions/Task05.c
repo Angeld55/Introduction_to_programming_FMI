@@ -2,7 +2,7 @@
 
 int main() {
     int hours, minutes;
-    scanf("%d %d", &hours, &minutes);
+    scanf_s("%d %d", &hours, &minutes);
 
     minutes += 15;
 

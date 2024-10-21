@@ -2,7 +2,7 @@
 
 int main() {
     int day, month;
-    scanf("%d %d", &day, &month);
+    scanf_s("%d %d", &day, &month);
 
     int daysInMonth = 31;
 

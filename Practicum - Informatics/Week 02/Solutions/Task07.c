@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     double r, x, y;
-    scanf("%lf %lf %lf", &r, &x, &y);
+    scanf_s("%lf %lf %lf", &r, &x, &y);
 
-    double distance = sqrt(x * x + y * y);
+    double distanceSquared = x * x + y * y;
+    double radiusSquared = r * r;
 
-    if (distance < r) {
+    if (distanceSquared < radiusSquared) {
         printf("In the circle\n");
-    }
-    else if (fabs(distance - r) < 1e-9) {
+    } else if (distanceSquared == radiusSquared) {
         printf("On the circle\n");
-    }
-    else {
+    } else {
         printf("Out of the circle\n");
     }
 
     return 0;
 }
+

@@ -1,19 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int arr[5];
-    for (int i = 0; i < 5; i++) {
-        scanf("%d", &arr[i]);
+    int a, b, c, d, e;
+    scanf_s("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+    if ((b > a && b > c || b < a && b < c) &&
+        (c > b && c > d || c < b && c < d) &&
+        (d > c && d > e || d < c && d < e)) {
+        printf("yes\n");
+    } else {
+        printf("no\n");
     }
 
-    for (int i = 1; i < 4; i++) {
-        if (!((arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) ||
-            (arr[i] < arr[i - 1] && arr[i] < arr[i + 1]))) {
-            printf("no\n");
-            return 0;
-        }
-    }
-
-    printf("yes\n");
     return 0;
 }
+

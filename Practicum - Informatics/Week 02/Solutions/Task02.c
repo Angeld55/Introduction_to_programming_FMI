@@ -2,7 +2,7 @@
 
 int main() {
     int number;
-    scanf("%d", &number);
+    scanf_s("%d", &number);
 
     if (number < 100) {
         printf("Less than 100\n");
