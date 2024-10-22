@@ -7,7 +7,7 @@ while (<condition>)
 	 code...
 }
 ```
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/Loop.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/Loop.png
 
 ### Примери:
 ***Пример 1:***  
@@ -138,11 +138,11 @@ for (initialization; condition; step)
  
 **Задача 7:** Да се напише програма, която приема цяло положително число **n** и *отпечатва числата от 1 до n\*n в спираловиден вид*.   
 
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task07.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task07.png)
 
 **Задача 8:** Да се напише програма, която по въведено цяло положително число *извежда пирамида във вида*:  
 
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task08.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task08.png)
 
 **Задача 9:** Въвеждат се 5 цели числа – **a, b, c, d, e**. Разглеждаме полинома f(x) = a\*x^4 + b\*x^3 + c\*x^2 + d\*x + e. *Отпечатайте всички цели решения на f(x) >= 0, където x e в интервала [-100, 100]*.  
 *Вход: -1 4 0 8 1, Изход: -1 0 2 3  
@@ -150,19 +150,19 @@ for (initialization; condition; step)
 
 **Задача 10:** Да се напише програма, която приема естествено число n и отпечатва следната гира:  
 
-![alt text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task10.png)
+![alt text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task10.png)
 
 **Задача 11:** Да се напише програма, която приема естествено число n и отпечатва следната папионка:  
 
-![alt_text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task11.png)
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task11.png)
 
 **Задача 12:** Да се напише програма, която приема естествено число n и отпечатва следния пясъчен часовник:  
 
-![alt text](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task12.png)
+![alt text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task12.png)
 
 **Задача 13:** Да се напише програма, която приема естествено число n и отпечатва следното дърво:  
 
-![alt taxt](https://github.com/MariaGrozdeva/Introduction_to_programming_FMI/blob/main/C/Sem_03/images/ExampleDrawings_Task13.png)
+![alt taxt](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/ExampleDrawings_Task13.png)
 
 **Задача 14:** Напишете програма, която приема две естествени числа a и b и намира броя естествени числа в интервала [a, b], такива че *сумата и произведението от цифрите им съвпадат*.  
 *Вход: 1 10, Изход: 9  
