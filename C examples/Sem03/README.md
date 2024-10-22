@@ -7,7 +7,7 @@ while (<condition>)
 	 code...
 }
 ```
-![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/Loop.png
+![alt_text](https://github.com/Angeld55/Introduction_to_programming_FMI/blob/main/C%20examples/Sem03/images/Loop.png)
 
 ### Примери:
 ***Пример 1:***  
