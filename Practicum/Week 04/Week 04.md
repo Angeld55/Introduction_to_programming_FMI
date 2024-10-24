@@ -179,13 +179,13 @@ true
 ```c++
 cout << getPerimeter(2, 5, 4, 1, 4, 3) << endl;
 cout << getArea(2, 5, 4, 1, 4, 3) << endl;
-cout << isInCircleWithRadius() << endl;
+cout << isInCircleWithRadius(2, 5, 4, 1, 4, 3, 10) << endl;
 ```
 Изход:
 ```c++
-perimeter: 9.3 
-area: 2
-is in circle: 
+perimeter: 11 
+area: 3
+is in circle: true
 ```
 
 *Следете за повторение на код. Може да се наложи да обособите повече от две функции!*
