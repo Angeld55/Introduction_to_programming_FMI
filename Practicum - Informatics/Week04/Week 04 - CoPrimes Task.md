@@ -22,6 +22,9 @@ int Euclid(int digit, int N)
 		return 1;
 	}
 
+	// no need to check for bigger number because every digits is in range [0..9] and N is bigger than 20
+	// so N will always be bigger than digit
+
 	int a = N;
 	int b = digit;
 
