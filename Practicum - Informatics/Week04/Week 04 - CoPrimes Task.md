@@ -15,7 +15,7 @@ N = 21 -> Great Numbers: 1 2 4 5 8 10 11 12 14 15 18 20
 ```C
 #include <stdio.h>
 
-int Euklid(int digit, int N)
+int Euclid(int digit, int N)
 {
 	if (digit == 0)
 	{
@@ -41,7 +41,7 @@ int checkCoPrimes(int number, int N)
 	{
 		int digit = number % 10;
 
-		int gcd = Euklid(digit, N);
+		int gcd = Euclid(digit, N);
 
 		if (gcd != 1)
 		{
