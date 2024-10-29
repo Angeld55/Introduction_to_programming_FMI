@@ -38,7 +38,7 @@ int Euclid(int digit, int N)
 	return a;
 }
 
-int checkCoPrimes(int number, int N)
+int checkForCoPrimesWithDigits(int number, int N)
 {
 	while (number != 0)
 	{
@@ -71,7 +71,7 @@ int main()
 
 	for (int number = 1; number < N; number++)
 	{
-		int areCoPrimes = checkCoPrimes(number, N);
+		int areCoPrimes = checkForCoPrimesWithDigits(number, N);
 
 		if (areCoPrimes)
 		{
