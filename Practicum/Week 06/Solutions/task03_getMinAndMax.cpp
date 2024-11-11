@@ -4,10 +4,10 @@ using namespace std;
 const unsigned ARR_SIZE = 5;
 
 void minAndMax(const int array[], unsigned size, int& min, int& max) {
-    min = INT16_MIN; // The lowest value of Integer
-    max = INT16_MAX; // The highest value of Integer
+    min = INT_MIN; // The lowest value of Integer
+    max = INT_MAX; // The highest value of Integer
 
-    for (unsigned i = 0; i < size; ++i) {
+    for (unsigned i = 0; i < size; i++) {
         if (array[i] < min) {
             min = array[i];
         }
