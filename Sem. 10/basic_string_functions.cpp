@@ -53,16 +53,13 @@ void myStrcat(char* first, const char* second)
 {
 	if (!first || !second)
 		return;
-	
-	size_t firstLen = myStrlen(first);
-	first += firstLen;
-	myStrcpy(second, first);
+	myStrcpy(second, first + myStrlen(first));
 }
 int main()
 {
 	char str[20] = "ABC";
 	char str2[] = "XY";
-	myStrCat(str, str2);
+	myStrcat(str, str2);
 
 	cout << str;
 }
