@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+const int DIGITS = 10;
+
 void fillIntegerWithZeros(int* array, int size) {
 	for (int i = 0; i < size; i++)
 		array[i] = 0;
