@@ -13,6 +13,15 @@ size_t strLen(const char* str) {
     return len;
 }
 
+void setFound(const char* text, const char* word, bool& found, int i, size_t wordLength) {
+    for (int j = 0; j < wordLength; ++j) {
+        if (text[i + j] != word[j]) {
+            found = false;
+            break;
+        }
+    }
+}
+
 int findFirstOccurrence(const char* text, const char* word) {
     size_t textLength = strLen(text);
     size_t wordLength = strLen(word);
@@ -23,14 +32,7 @@ int findFirstOccurrence(const char* text, const char* word) {
 
     for (int i = 0; i <= textLength - wordLength; ++i) {
         bool found = true;
-
-        for (int j = 0; j < wordLength; ++j) {
-            if (text[i + j] != word[j]) {
-                found = false;
-                break;
-            }
-        }
-
+        setFound(text, word, found, i, wordLength);
         if (found) {
             return i;
         }
