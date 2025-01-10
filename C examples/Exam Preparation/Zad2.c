@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int isdelimiter(char symbol, const char* delimiters)
+int isDelimiter(char symbol, const char* delimiters)
 {
 	for (int i = 0; delimiters[i]; i++)
 	{
@@ -14,9 +14,9 @@ int isdelimiter(char symbol, const char* delimiters)
 	return 0;
 }
 
-int getwordstartindex(const char* text, const char* delimiters, int startindex)
+int getWordStartIndex(const char* text, const char* delimiters, int startIndex)
 {
-	int index = startindex;
+	int index = startIndex;
 
 	while (1)
 	{
@@ -25,7 +25,7 @@ int getwordstartindex(const char* text, const char* delimiters, int startindex)
 			break;
 		}
 
-		if (!isdelimiter(text[index], delimiters))
+		if (!isDelimiter(text[index], delimiters))
 		{
 			break;
 		}
@@ -36,9 +36,9 @@ int getwordstartindex(const char* text, const char* delimiters, int startindex)
 	return index;
 }
 
-int getwordendindex(const char* text, const char* delimiters, int startindex)
+int getWordEndIndex(const char* text, const char* delimiters, int startIndex)
 {
-	int index = startindex;
+	int index = startIndex;
 
 	while (1)
 	{
@@ -47,7 +47,7 @@ int getwordendindex(const char* text, const char* delimiters, int startindex)
 			break;
 		}
 
-		if (isdelimiter(text[index], delimiters))
+		if (isDelimiter(text[index], delimiters))
 		{
 			break;
 		}
@@ -62,35 +62,35 @@ void reverse(char* left, char* right)
 {
 	while (left < right)
 	{
-		char leftsymbol = *left;
-		char rightsymbol = *right;
+		char leftSymbol = *left;
+		char rightSymbol = *right;
 
-		*left = rightsymbol;
-		*right = leftsymbol;
+		*left = rightSymbol;
+		*right = leftSymbol;
 
 		left++;
 		right--;
 	}
 }
 
-void reversonlywords(char* text, const char* delimiters)
+void reversOnlyWords(char* text, const char* delimiters)
 {
 	int index = 0;
 
 	while (1)
 	{
-		int wordstartindex = getwordstartindex(text, delimiters, index);
+		int wordStartIndex = getWordStartIndex(text, delimiters, index);
 
-		if (text[wordstartindex] == '\0')
+		if (text[wordStartIndex] == '\0')
 		{
 			return;
 		}
 
-		int wordendindex = getwordendindex(text, delimiters, wordstartindex + 1);
+		int wordEndIndex = getWordEndIndex(text, delimiters, wordStartIndex + 1);
 
-		reverse(text + wordstartindex, text + wordendindex);
+		reverse(text + wordStartIndex, text + wordEndIndex);
 
-		index = wordendindex + 1;
+		index = wordEndIndex + 1;
 	}
 }
 
@@ -102,7 +102,7 @@ int main()
 	char delimiters[64];
 	scanf_s("%s", delimiters, 64);
 
-	reversonlywords(text, delimiters);
+	reversOnlyWords(text, delimiters);
 
 	printf("%s", text);
 }
