@@ -1,8 +1,10 @@
 #include <iostream>
+using namespace std;
 
-int main(){
-   	int a, b;
-	std::cin >> a >> b;
+int main() {
+   	int a = 0, b = 0;
+	cin >> a >> b;
+
 	if (b > a) {
 		int temp = a;
 		a = b;
@@ -13,5 +15,5 @@ int main(){
 		a = b;
 		b = mod;
 	}
-	std::cout << a << std::endl;
+	cout << a << endl;
 }

@@ -1,25 +1,31 @@
 #include <iostream>
+using namespace std;
 
-int main(){
-   	unsigned n;
-		std::cin >> n;
-		unsigned mostCommonDigit;
-		unsigned mostCommonDigitOccurrences = 0;
-		for (int i = 9; i >= 0; i--)
-		{
-			unsigned copyOfN = n;
-			unsigned currDigitOccurences = 0;
+int main() {
+   	int n = 0;
+	cin >> n;
+
+	int mostCommonDigit = 0;
+	int mostCommonDigitOccurrences = 0;
+
+		for (int i = 9; i >= 0; i--) {
+			int copyOfN = n;
+			int currDigitOccurences = 0;
+
 			while (copyOfN != 0) {
-				unsigned lastDigit = copyOfN % 10;
-				if (lastDigit == i)
+				int lastDigit = copyOfN % 10;
+				 
+				if (lastDigit == i) {
 					currDigitOccurences++;
+				}
 				copyOfN /= 10;
 			}
+
 			if (currDigitOccurences >= mostCommonDigitOccurrences) {
 				mostCommonDigit = i;
 				mostCommonDigitOccurrences = currDigitOccurences;
 			}
 
 		}
-		std::cout << mostCommonDigit;
+		cout << mostCommonDigit;
 }
