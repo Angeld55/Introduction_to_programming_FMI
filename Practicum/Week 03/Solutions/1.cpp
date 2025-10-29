@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int n, k;
+int main() {
+    int n = 0, k = 0;
 	cin >> n >> k;
 	int max = n > k ? n : k;
 

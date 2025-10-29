@@ -7,13 +7,13 @@ int main() {
 
 	int copyOfN = n;
 	int nSize = 0;
+
 	while (copyOfN > 0) {
 		nSize++;
 		copyOfN /= 10;
 	}
 
 	if (nSize % 2 == 0) {
-
 		int result = 0;
 		int resultSize = nSize - 2;
 		int half = resultSize / 2;

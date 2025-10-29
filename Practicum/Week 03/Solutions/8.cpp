@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     int n = 0;
 	cin >> n;
 
@@ -26,6 +26,6 @@ int main(){
 		}
 
 	}
-	std::cout << "Max: " << maxNum << std::endl;
-	std::cout << "Second to max: " << secondMaxNum << std::endl;
+	cout << "Max: " << maxNum << endl;
+	cout << "Second to max: " << secondMaxNum << endl;
 }
