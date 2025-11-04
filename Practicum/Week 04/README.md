@@ -169,14 +169,14 @@ cout << sortDigit(6253) << endl;
 
 **Пример:**
 ```c++
-cout << getPerimeter(2, 5, 4, 1, 4, 3) << endl;
-cout << getArea(2, 5, 4, 1, 4, 3) << endl;
-cout << isInCircleWithRadius(2, 5, 4, 1, 4, 3, 10) << endl;
+cout << getPerimeter(0, 0, 3, 0, 3, 4) << endl;
+cout << getArea(0, 0, 3, 0, 3, 4) << endl;
+cout << isInCircleWithRadius(0, 0, 3, 0, 3, 4, 10) << endl;
 ```
 Изход:
 ```c++
-perimeter: 11 
-area: 3
+perimeter: 12 
+area: 6
 is in circle: true
 ```
 
