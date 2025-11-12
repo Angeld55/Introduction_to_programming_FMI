@@ -140,7 +140,7 @@ double distBetweenTwoPoints(int p1x, int p1y, int p2x, int p2y)
 	return sqrt(dx * dx + dy * dy);
 }
 
-bool absoluteValue(int n)
+unsigned absoluteValue(int n)
 {
 	if (n < 0)
 		return -n;
